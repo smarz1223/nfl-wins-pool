@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFL Wins Pool 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--brown:#3d2418;--brown2:#5c3a26;--green:#2f6b34;
+--yellow:#d4a017;--yellow2:#e8c15a;--cream:#faf8f2;--cream2:#f1ece1;
+--gray:#6b7280;--gray2:#9ca3af;--text:#231a12;--text2:#3f342a;
+--border:#ded5c4;--white:#fff;--win:#2f6b34;--loss:#a1402e;--tie:#a3790a;
+}
+body{background:var(--cream);color:var(--text);font-family:'Source Sans 3',sans-serif;font-size:15px;line-height:1.6}
+.header{background:var(--brown);padding:0 1.75rem;display:flex;align-items:center;gap:1.25rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.25);min-height:52px;flex-wrap:wrap}
+.logo-text{font-family:'Playfair Display',serif;font-size:21px;font-weight:900;color:#fff;white-space:nowrap;flex-shrink:0}
+.logo-text span{color:var(--yellow2)}
+nav{display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;width:100%}
+nav::-webkit-scrollbar{display:none}
+nav a{color:rgba(255,255,255,.65);text-decoration:none;font-family:'Roboto Condensed',sans-serif;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:0 13px;display:flex;align-items:center;height:40px;border-bottom:3px solid transparent;transition:all .2s;cursor:pointer;white-space:nowrap;flex-shrink:0}
+nav a:hover{color:#fff;border-bottom-color:rgba(255,255,255,.3)}
+nav a.active{color:#fff;border-bottom-color:var(--yellow2)}
+.hright{margin-left:auto;flex-shrink:0;display:flex;align-items:center}
+.badge{font-family:'Roboto Condensed',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);padding:3px 10px;border-radius:3px;white-space:nowrap}
+.ldot{width:6px;height:6px;background:#3ddc55;border-radius:50%;display:inline-block;margin-right:5px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.stripe{height:4px;background:linear-gradient(90deg,var(--green) 0%,var(--green) 40%,var(--yellow) 40%,var(--yellow) 60%,var(--brown2) 60%)}
+.main{max-width:1200px;margin:0 auto;padding:1.75rem 2rem}
+.page{display:none}.page.active{display:block}
+.eyebrow{font-family:'Roboto Condensed',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:4px;font-weight:700}
+.ptitle{font-family:'Playfair Display',serif;font-size:30px;font-weight:900;color:var(--brown);margin-bottom:3px;line-height:1.1}
+.psub{color:var(--gray);font-size:13px;margin-bottom:1.5rem;font-weight:300}
+.card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.ctitle{font-family:'Roboto Condensed',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray);margin-bottom:.85rem;font-weight:700;border-bottom:2px solid var(--brown);padding-bottom:6px;display:inline-block}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.sc{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem;border-top:4px solid var(--brown);box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.slabel{font-family:'Roboto Condensed',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gray);margin-bottom:3px;font-weight:700}
+.sval{font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--brown);line-height:1.15}
+.ssub{font-size:11px;color:var(--gray2);margin-top:3px}
+.mb2{margin-bottom:1.25rem}.mt2{margin-top:1.25rem}
+.section-hd{margin:1.75rem 0 .75rem;font-family:'Playfair Display',serif;font-size:18px;font-weight:900;color:var(--brown);border-top:2px solid var(--border);padding-top:1.25rem;display:flex;align-items:center;gap:10px}
+.live-badge{font-family:'Roboto Condensed',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;background:rgba(47,107,52,.1);border:1px solid rgba(47,107,52,.3);color:var(--green);padding:2px 8px;border-radius:3px;font-weight:700}
+.mock-banner{background:var(--yellow2);color:var(--brown);font-family:'Roboto Condensed',sans-serif;font-size:11px;letter-spacing:.5px;font-weight:700;text-align:center;padding:5px;text-transform:uppercase}
+.dt{width:100%;border-collapse:collapse;font-size:13px}
+.dt th{font-family:'Roboto Condensed',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gray);padding:8px 9px;text-align:right;border-bottom:2px solid var(--brown);font-weight:700;cursor:pointer;white-space:nowrap;user-select:none;background:var(--cream2)}
+.dt th:first-child,.dt th.tal{text-align:left}
+.dt th:hover{color:var(--brown);background:#e8e0d0}
+.dt th.sa::after{content:" ▲";font-size:9px;color:var(--green)}
+.dt th.sd::after{content:" ▼";font-size:9px;color:var(--green)}
+.dt td{padding:7px 9px;text-align:right;border-bottom:1px solid var(--border);color:var(--text2);font-feature-settings:"tnum"}
+.dt td:first-child,.dt td.tal{text-align:left;font-weight:600;color:var(--text)}
+.dt tbody tr:hover{background:var(--cream2)}
+.dt tbody tr:last-child td{border-bottom:none}
+.dt tbody tr.np-row td{color:var(--gray);font-style:italic}
+.dt tbody tr.np-row td:first-child{color:var(--gray)}
+.wt{color:var(--win);font-weight:600}
+.lt{color:var(--loss);font-weight:600}
+.tt{color:var(--tie);font-weight:600}
+.rb{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:3px;font-family:'Roboto Condensed',sans-serif;font-weight:700;font-size:12px;margin-right:4px;flex-shrink:0}
+.r1{background:var(--yellow);color:#fff}.r2{background:var(--gray2);color:#fff}.r3{background:#8a5a2b;color:#fff}.rn{background:var(--cream2);color:var(--gray)}
+.payout{font-family:'Roboto Condensed',sans-serif;font-weight:700;font-size:12px}
+.payout-1{color:var(--yellow)}.payout-2{color:var(--gray)}.payout-3{color:#8a5a2b}.payout-none{color:var(--gray2);font-weight:400}
+.chip{display:inline-flex;align-items:center;border-radius:3px;padding:1px 6px;font-family:'Roboto Condensed',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin:1px;color:#fff;white-space:nowrap}
+.tpct{display:inline-flex;align-items:center;gap:3px;margin:1px}
+.tpct .chip{margin:0}
+.tpct .pp{font-family:'Roboto Condensed',sans-serif;font-size:10px;font-weight:700;color:var(--text2);background:var(--cream2);border:1px solid var(--border);border-radius:0 3px 3px 0;padding:1px 5px;margin-left:-2px}
+.odot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:middle;flex-shrink:0}
+.val-pos{color:var(--green);font-weight:700}
+.val-neg{color:var(--loss);font-weight:700}
+.val-neu{color:var(--gray2)}
+.leg{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.leg-item{display:flex;align-items:center;gap:5px;font-family:'Roboto Condensed',sans-serif;font-size:11px;font-weight:700;cursor:pointer;padding:3px 8px;border-radius:3px;transition:all .15s;border:1px solid transparent}
+.leg-item:hover{background:var(--cream2)}
+.leg-item.ldim{opacity:.2}
+.leg-item.lhi{border-color:var(--brown);background:var(--cream2)}
+.dot{width:10px;height:10px;border-radius:2px;display:inline-block;flex-shrink:0}
+.heat-cell{color:#111!important;font-weight:600}
+.owner-group-hd td{background:var(--cream2)!important;font-family:'Roboto Condensed',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:700;color:var(--text);padding:6px 9px;border-top:2px solid var(--border)}
+.wk-badge{display:inline-flex;align-items:center;justify-content:center;min-width:28px;height:20px;border-radius:3px;font-family:'Roboto Condensed',sans-serif;font-size:10px;font-weight:700;color:#fff}
+.wk-w{background:var(--win)}
+.wk-l{background:var(--loss)}
+.wk-t{background:var(--yellow);color:#3d2418}
+.wk-bye{background:var(--cream2);color:var(--gray2);border:1px dashed var(--border);font-weight:400}
+#wk-team-tbl{width:auto}
+#wk-team-tbl th:not(:first-child),#wk-team-tbl td:not(:first-child){text-align:left;width:56px}
+.wk-pend{background:var(--cream2);color:var(--gray2);border:1px dotted var(--border);font-weight:400}
+@media(max-width:900px){
+.header{padding:0 1rem;gap:.5rem}.header .hright{margin-left:auto}
+.logo-text{font-size:16px}
+.main{padding:1rem}
+.ptitle{font-size:22px}
+.g2,.g3{grid-template-columns:1fr;gap:.875rem}
+.dt{font-size:11px}
+.dt th,.dt td{padding:6px 6px}
+.hm{display:none!important}
+.dt td:first-child,.dt th:first-child{position:sticky;left:0;z-index:1;background:var(--white)}
+.dt th:first-child{background:var(--cream2)}
+.card{padding:.875rem}
+}
+@media(max-width:480px){
+.logo-text{font-size:13px}
+nav a{font-size:11px;padding:0 10px}
+.badge{font-size:9px;padding:2px 7px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="logo-text">NFL <span>Wins Pool</span> 2026</div>
+<nav>
+<a href="#" class="active" onclick="showPage('standings',this);return false">Standings</a>
+<a href="#" onclick="showPage('details',this);return false">Details</a>
+<a href="#" onclick="showPage('weekly',this);return false">Weekly</a>
+<a href="#" onclick="showPage('teams',this);return false">Teams</a>
+<a href="#" onclick="showPage('draft',this);return false">Draft Board</a>
+</nav>
+<div class="hright"><div class="badge" id="last-updated">Loading…</div></div>
+</header>
+<div class="stripe"></div>
+<main class="main">
+
+<!-- ====== STANDINGS ====== -->
+<div id="pg-standings" class="page active">
+<div class="eyebrow">League Overview</div>
+<div class="ptitle">Standings</div>
+<div class="psub">Win % across all 3 teams (ties = half-win) · Point differential tiebreaker · Payouts: $600 / $300 / $100 for 1st–3rd</div>
+<div class="g3 mb2" id="st-cards"></div>
+<div class="card mb2">
+<div class="ctitle">Overall Leaderboard — click any column to sort</div>
+<div style="overflow-x:auto"><table class="dt" id="st-tbl">
+<thead><tr>
+<th data-col="rank" data-asc="1" onclick="sortTbl('st-tbl',this)">#&nbsp;Owner</th>
+<th class="tal" data-col="payout_val" onclick="sortTbl('st-tbl',this)">Payout</th>
+<th class="tal" data-col="teams_str" onclick="sortTbl('st-tbl',this)">Teams</th>
+<th data-col="w" onclick="sortTbl('st-tbl',this)">W</th>
+<th data-col="l" onclick="sortTbl('st-tbl',this)">L</th>
+<th data-col="t" onclick="sortTbl('st-tbl',this)">T</th>
+<th data-col="pct" onclick="sortTbl('st-tbl',this)">Win %</th>
+<th data-col="pd" onclick="sortTbl('st-tbl',this)">Pt Diff</th>
+<th data-col="gb" onclick="sortTbl('st-tbl',this)">GB</th>
+</tr></thead>
+<tbody id="st-tbody"></tbody>
+</table></div>
+</div>
+</div>
+
+<!-- ====== DETAILS ====== -->
+<div id="pg-details" class="page">
+<div class="eyebrow">Performance Analysis</div>
+<div class="ptitle">Details</div>
+<div class="psub">Best performing teams and draft order performance across all owners</div>
+<div class="card mb2">
+<div class="ctitle">Best Performing Teams</div>
+<div style="overflow-x:auto"><table class="dt" id="bpt-tbl">
+<thead id="bpt-thead"></thead>
+<tbody id="bpt-tbody"></tbody>
+</table></div>
+</div>
+<div class="card">
+<div class="ctitle">Draft Order Performance</div>
+<div style="overflow-x:auto"><table class="dt" id="dop-tbl">
+<thead id="dop-thead"></thead>
+<tbody id="dop-tbody"></tbody>
+</table></div>
+</div>
+</div>
+
+<!-- ====== WEEKLY ====== -->
+<div id="pg-weekly" class="page">
+<div class="eyebrow">Week by Week</div>
+<div class="ptitle">Weekly Results</div>
+<div class="psub" id="wk-sub">Cumulative win % by owner, through the current week &mdash; more weeks populate as the season goes</div>
+<div class="card mb2">
+<div class="ctitle">Cumulative Win % Trend — click legend to highlight</div>
+<div class="leg" id="wk-leg"></div>
+<div style="position:relative;height:320px"><canvas id="ch-weekly"></canvas></div>
+</div>
+<div class="card">
+<div class="ctitle">Team Results by Week</div>
+<div style="overflow-x:auto"><table class="dt" id="wk-team-tbl">
+<thead id="wk-team-thead"></thead>
+<tbody id="wk-team-tbody"></tbody>
+</table></div>
+</div>
+</div>
+
+<!-- ====== TEAMS ====== -->
+<div id="pg-teams" class="page">
+<div class="eyebrow">Team Analysis</div>
+<div class="ptitle">Teams</div>
+<div class="psub">Per-team performance and draft value</div>
+<div class="card mb2">
+<div class="ctitle">Best &amp; Worst Draft Picks — click column to sort</div>
+<div style="font-size:11px;color:var(--gray);font-family:'Roboto Condensed',sans-serif;margin-bottom:8px">Actual win % vs optimal pick at same slot</div>
+<div style="overflow-x:auto"><table class="dt" id="dv-tbl">
+<thead><tr>
+<th data-col="pick" data-asc="1" onclick="sortTbl('dv-tbl',this)">Pick</th>
+<th class="tal" data-col="team" onclick="sortTbl('dv-tbl',this)">Team</th>
+<th class="tal" data-col="owner" onclick="sortTbl('dv-tbl',this)">Owner</th>
+<th data-col="actual_pct" onclick="sortTbl('dv-tbl',this)">Actual</th>
+<th data-col="optimal_pct" onclick="sortTbl('dv-tbl',this)">Optimal</th>
+<th data-col="value" onclick="sortTbl('dv-tbl',this)">Value</th>
+<th style="cursor:default;min-width:70px">Chart</th>
+</tr></thead>
+<tbody id="dv-tbody"></tbody>
+</table></div>
+</div>
+<div class="card">
+<div class="ctitle">All Teams — click column to sort</div>
+<div style="overflow-x:auto"><table class="dt" id="tm-tbl">
+<thead><tr>
+<th data-col="pick" onclick="sortTbl('tm-tbl',this)">Pick</th>
+<th data-col="owner" onclick="sortTbl('tm-tbl',this)">Owner</th>
+<th data-col="team" onclick="sortTbl('tm-tbl',this)">Team</th>
+<th data-col="w" onclick="sortTbl('tm-tbl',this)">W</th>
+<th data-col="l" onclick="sortTbl('tm-tbl',this)">L</th>
+<th data-col="t" onclick="sortTbl('tm-tbl',this)">T</th>
+<th data-col="pct" onclick="sortTbl('tm-tbl',this)">Win %</th>
+<th data-col="pd" onclick="sortTbl('tm-tbl',this)">Pt Diff</th>
+</tr></thead>
+<tbody id="tm-tbody"></tbody>
+</table></div>
+</div>
+</div>
+
+<!-- ====== DRAFT ====== -->
+<div id="pg-draft" class="page">
+<div class="eyebrow">Snake Draft</div>
+<div class="ptitle">Draft Board</div>
+<div class="psub">30 picks · 10 owners × 3 teams · 2 teams not drafted (shown at bottom)</div>
+<div class="card">
+<div class="ctitle">2026 Draft Picks — click column to sort</div>
+<div style="overflow-x:auto"><table class="dt" id="dr-tbl">
+<thead><tr>
+<th data-col="pick" data-asc="1" onclick="sortTbl('dr-tbl',this)">Pick</th>
+<th data-col="owner" onclick="sortTbl('dr-tbl',this)">Owner</th>
+<th data-col="team" onclick="sortTbl('dr-tbl',this)">Team</th>
+<th class="tal hm" data-col="name" onclick="sortTbl('dr-tbl',this)">Full Name</th>
+<th data-col="pct2025" onclick="sortTbl('dr-tbl',this)">2025 Win %</th>
+<th data-col="pct" onclick="sortTbl('dr-tbl',this)">26 Win %</th>
+</tr></thead>
+<tbody id="dr-tbody"></tbody>
+</table></div>
+</div>
+</div>
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+var OC={"MERG":"#2f6b34","MARZ":"#8a5a2b","KEV":"#c99a1f","JIMMY":"#4a7c59","PHIL":"#a1402e","DOM":"#5c4a3d","ANT":"#6b8f3d","LON":"#b5651d","ADAM B":"#7a6a1f","FUR":"#3d5a45"};
+function oc(o){return OC[o]||"#666";}
+var PAYOUTS={1:600,2:300,3:100};
+function payoutCell(rank){
+var amt=PAYOUTS[rank];
+if(!amt) return "<span class=\'payout payout-none\'>—</span>";
+var cls="payout-"+rank;
+return "<span class=\'payout "+cls+"\'>$"+amt+"</span>";
+}
+
+var D=null,charts={},activeLeg=null;
+function loadData(){
+fetch('data.json?_='+Date.now())
+.then(function(r){return r.json();})
+.then(function(d){D=d;init();})
+.catch(function(e){
+console.error('Could not load data.json',e);
+document.getElementById('last-updated').textContent='Error loading data.json';
+});
+}
+var OWNERS_ORDER;
+
+function init(){
+OWNERS_ORDER=D.owners_order;
+var utcStr=D.updated;
+var parts=utcStr.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/);
+var localStr=utcStr;
+if(parts){
+var dt=new Date(Date.UTC(+parts[1],+parts[2]-1,+parts[3],+parts[4],+parts[5],+parts[6]));
+var h12=dt.getHours()%12||12;
+var min=dt.getMinutes().toString().padStart(2,"0");
+var ampm=dt.getHours()<12?"AM":"PM";
+var tz=dt.toLocaleTimeString("en-US",{timeZoneName:"short"}).split(" ").pop();
+localStr="Wk "+D.current_week+" of "+D.total_weeks+" · "+h12+":"+min+ampm+" "+tz+" · "+dt.toLocaleDateString("en-US",{month:"short",day:"numeric"});
+}
+document.getElementById("last-updated").innerHTML = "<span class=\'ldot\'></span>" + localStr;
+renderStandings();
+renderDetails();
+renderWeekly();
+renderTeams();
+renderDraft();
+}
+
+function showPage(id,el){
+document.querySelectorAll(".page").forEach(function(p){p.classList.remove("active");});
+document.querySelectorAll("nav a").forEach(function(a){a.classList.remove("active");});
+document.getElementById("pg-"+id).classList.add("active");
+if(el) el.classList.add("active");
+}
+
+function sortTbl(id,th){
+var tbl=document.getElementById(id);
+var col=th.dataset.col;
+var asc=th.dataset.asc==="1";
+tbl.querySelectorAll("th").forEach(function(t){t.classList.remove("sa","sd");t.dataset.asc="";});
+th.classList.add(asc?"sa":"sd");
+th.dataset.asc=asc?"":"1";
+var tbody=tbl.querySelector("tbody");
+var rows=Array.from(tbody.querySelectorAll("tr"));
+var npRows=rows.filter(function(r){return r.classList.contains("np-row");});
+var dataRows=rows.filter(function(r){return !r.classList.contains("np-row");});
+dataRows.sort(function(a,b){
+var av=a.dataset[col]!==undefined?a.dataset[col]:"";
+var bv=b.dataset[col]!==undefined?b.dataset[col]:"";
+var an=parseFloat(av),bn=parseFloat(bv);
+if(!isNaN(an)&&!isNaN(bn)) return asc?an-bn:bn-an;
+return asc?String(av).localeCompare(String(bv)):String(bv).localeCompare(String(av));
+});
+dataRows.concat(npRows).forEach(function(r){tbody.appendChild(r);});
+}
+
+function applyHeat(cells,higher){
+var vals=cells.map(function(c){return parseFloat(c.dataset.hv);}).filter(function(v){return !isNaN(v);});
+if(vals.length<2) return;
+var mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),rng=mx-mn;
+if(rng===0) return;
+cells.forEach(function(c){
+var v=parseFloat(c.dataset.hv); if(isNaN(v)) return;
+var p=(v-mn)/rng; if(!higher) p=1-p;
+var r2,g2,b2;
+if(p>=0.5){
+var t=(p-0.5)*2;
+r2=Math.round(255-t*208); g2=Math.round(255-t*148); b2=Math.round(255-t*203);
+} else {
+var t=p*2;
+r2=Math.round(232+t*23); g2=Math.round(150+t*105); b2=Math.round(140+t*115);
+}
+var a=Math.min(0.85,Math.abs(p-0.5)*2.2);
+if(a>0.05){
+c.style.background="rgba("+r2+","+g2+","+b2+","+a.toFixed(2)+")";
+c.style.color="#111";
+c.style.fontWeight="600";
+}
+c.classList.add("heat-cell");
+});
+}
+function heatCol(tid,ci,higher,inclNp){
+var tbl=document.getElementById(tid); if(!tbl) return;
+var sel=inclNp?"tbody tr":"tbody tr:not(.np-row)";var cells=Array.from(tbl.querySelectorAll(sel)).map(function(r){return r.cells[ci];}).filter(Boolean);
+applyHeat(cells,higher);
+}
+
+function pct(v){
+if(v===null||v===undefined||isNaN(v)) return "—";
+return Math.round(v*100)+"%";
+}
+function pctD(v,d){
+if(v===null||v===undefined||isNaN(v)) return "—";
+return (v*100).toFixed(d!==undefined?d:1)+"%";
+}
+function fpd(v){return (v>=0?"+":"")+v;}
+
+function teamPctChip(team,pctVal,ownerKey){
+var col=oc(ownerKey);
+return "<span class=\'tpct\'>"+
+"<span class=\'chip\' style=\'background:"+col+"\'>"+team+"</span>"+
+"<span class=\'pp\'>"+pct(pctVal)+"</span>"+
+"</span>";
+}
+
+function renderStandings(){
+var s=D.standings;
+var cards=[];
+cards.push("<div class=\'sc\'><div class=\'slabel\'>Cum. Leader</div><div class=\'sval\'>"+s[0].owner+"</div><div class=\'ssub\'>"+pct(s[0].pct)+" Win %</div></div>");
+var bestPd = s.slice().sort(function(a,b){return b.pd-a.pd;})[0];
+cards.push("<div class=\'sc\'><div class=\'slabel\'>Best Pt Diff</div><div class=\'sval\'>"+bestPd.owner+"</div><div class=\'ssub\'>"+fpd(bestPd.pd)+" Pts</div></div>");
+var bestTeam = D.team_rows.slice().sort(function(a,b){return b.pct-a.pct;})[0];
+cards.push("<div class=\'sc\'><div class=\'slabel\'>Top Single Team</div><div class=\'sval\'>"+bestTeam.team+"</div><div class=\'ssub\'>"+pct(bestTeam.pct)+" · "+bestTeam.owner+"</div></div>");
+document.getElementById("st-cards").innerHTML=cards.join("");
+buildOverallTable("st-tbody",s);
+}
+function teamPctChips(teams,ownerKey){
+var map={};
+D.team_rows.forEach(function(r){if(r.owner===ownerKey) map[r.team]=r.pct;});
+return teams.map(function(t){
+var p=map[t];
+return teamPctChip(t,p!==undefined?p:null,ownerKey);
+}).join(" ");
+}
+function buildOverallTable(tbodyId,s){
+document.getElementById(tbodyId).innerHTML=s.map(function(r){
+var rc=r.rank===1?"r1":r.rank===2?"r2":r.rank===3?"r3":"rn";
+var teams=teamPctChips(r.teams,r.owner);
+var gbStr=r.gb===0?"—":r.gb.toFixed(1);
+return "<tr data-rank=\'"+r.rank+"\' data-owner=\'"+r.owner+"\' data-payout_val=\'"+(PAYOUTS[r.rank]||0)+"\' data-teams_str=\'"+r.teams.join(" ")+
+"\' data-w=\'"+r.w+"\' data-l=\'"+r.l+"\' data-t=\'"+r.t+"\' data-pct=\'"+r.pct+
+"\' data-pd=\'"+r.pd+"\' data-gb=\'"+r.gb+"\'>"+
+"<td><span class=\'rb "+rc+"\'>"+r.rank+"</span><span class=\'odot\' style=\'background:"+oc(r.owner)+"\'></span>"+r.owner+"</td>"+
+"<td class=\'tal\'>"+payoutCell(r.rank)+"</td>"+
+"<td class=\'tal\'>"+teams+"</td>"+
+"<td class=\'wt\'>"+r.w+"</td>"+
+"<td class=\'lt\'>"+r.l+"</td>"+
+"<td class=\'tt\'>"+r.t+"</td>"+
+"<td data-hv=\'"+r.pct+"\'>"+pct(r.pct)+"</td>"+
+"<td class=\'"+(r.pd>=0?"wt":"lt")+"\'>"+fpd(r.pd)+"</td>"+
+"<td>"+gbStr+"</td>"+
+"</tr>";
+}).join("");
+heatCol("st-tbl",5,true);
+}
+
+function renderDetails(){buildBestPerforming();buildDraftOrderPerf();}
+function ownerHeaderCols(){
+return OWNERS_ORDER.map(function(o){
+return "<th style=\'text-align:center;min-width:52px\'><span class=\'odot\' style=\'background:"+oc(o)+"\'></span>"+o+"</th>";
+}).join("")+"<th class=\'tal\'>Not Picked</th>";
+}
+function buildBestPerforming(){
+document.getElementById("bpt-thead").innerHTML=
+"<tr><th>Rank</th><th class=\'tal\'>Full Name</th>"+ownerHeaderCols()+"</tr>";
+var drafted=D.team_rows.slice().map(function(r){return{name:r.name,pct:r.pct,owner:r.owner,np:false};});
+var notPicked=(D.not_picked||[]).map(function(r){return{name:r.name,pct:r.pct,owner:null,np:true};});
+var allRows=drafted.concat(notPicked).sort(function(a,b){return b.pct-a.pct;});
+var rows=allRows.map(function(r,i){
+var ownerCols,npCol;
+if(r.np){
+ownerCols=OWNERS_ORDER.map(function(){return "<td></td>";}).join("");
+npCol="<td style=\'text-align:center\' data-hv=\'"+r.pct+"\'>"+pct(r.pct)+"</td>";
+} else {
+ownerCols=OWNERS_ORDER.map(function(o){
+if(r.owner!==o) return "<td></td>";
+return "<td style=\'text-align:center\' data-hv=\'"+r.pct+"\'>"+pct(r.pct)+"</td>";
+}).join("");
+npCol="<td></td>";
+}
+var ns=r.np?" style=\'color:var(--gray);font-style:italic;font-weight:400\'":"";
+return "<tr><td>"+(i+1)+"</td><td class=\'tal\'"+ns+">"+r.name+"</td>"+ownerCols+npCol+"</tr>";
+}).join("");
+document.getElementById("bpt-tbody").innerHTML=rows;
+var cells=[];
+document.querySelectorAll("#bpt-tbl tbody td[data-hv]").forEach(function(c){cells.push(c);});
+applyHeat(cells,true);
+}
+function buildDraftOrderPerf(){
+document.getElementById("dop-thead").innerHTML=
+"<tr><th>Pick</th><th class=\'tal\'>Team</th>"+ownerHeaderCols()+
+"<th>Draft Value</th><th>Owner</th><th>Value Rank</th></tr>";
+var dvSorted=D.draft_value.slice().sort(function(a,b){return b.value-a.value;});
+var vRankMap={};
+dvSorted.forEach(function(d,i){vRankMap[d.pick]=i+1;});
+var rows=D.draft.map(function(pick){
+var tr=D.team_rows.find(function(r){return r.pick===pick.pick;});
+var dv=D.draft_value.find(function(r){return r.pick===pick.pick;});
+var ap=tr?tr.pct:0;
+var dvVal=dv?dv.value:0;
+var dvStr=(dvVal>=0?"+":"")+pctD(dvVal);
+var dvCls=dvVal>0.005?"val-pos":dvVal<-0.005?"val-neg":"val-neu";
+var vRank=vRankMap[pick.pick]||"—";
+var ownerCols=OWNERS_ORDER.map(function(o){
+if(pick.owner!==o) return "<td></td>";
+return "<td style=\'text-align:center\' data-hv=\'"+ap+"\'>"+pct(ap)+"</td>";
+}).join("");
+return "<tr data-pick=\'"+pick.pick+"\'>"+
+"<td>"+pick.pick+"</td>"+
+"<td class=\'tal\'><span class=\'chip\' style=\'background:"+oc(pick.owner)+"\'>"+pick.team+"</span></td>"+
+ownerCols+"<td></td>"+
+"<td class=\'"+dvCls+"\'>"+dvStr+"</td>"+
+"<td>"+pick.owner+"</td>"+
+"<td>"+vRank+"</td>"+
+"</tr>";
+}).join("");
+var npRows=(D.not_picked||[]).map(function(r){
+var empCols=OWNERS_ORDER.map(function(){return "<td></td>";}).join("");
+return "<tr class=\'np-row\' data-pick=\'99\'>"+
+"<td style=\'color:var(--gray2)\'>—</td>"+
+"<td class=\'tal\'><span class=\'chip\' style=\'background:#888\'>"+r.team+"</span></td>"+
+empCols+
+"<td style=\'text-align:center;font-style:italic;color:var(--gray)\' data-hv=\'"+r.pct+"\'>"+pct(r.pct)+"</td>"+
+"<td style=\'color:var(--gray)\'>—</td>"+
+"<td style=\'color:var(--gray);font-style:italic\'>Not Picked</td>"+
+"<td style=\'color:var(--gray)\'>—</td>"+
+"</tr>";
+}).join("");
+document.getElementById("dop-tbody").innerHTML=rows+npRows;
+var cells=[];
+document.querySelectorAll("#dop-tbl tbody td[data-hv]").forEach(function(c){cells.push(c);});
+applyHeat(cells,true);
+}
+
+function renderWeekly(){buildWeeklyChart();buildWeeklyTeamTable();}
+function buildWeeklyChart(){
+var ctx=document.getElementById("ch-weekly").getContext("2d");
+if(charts["weekly"]) charts["weekly"].destroy();
+var owners=D.standings.map(function(r){return r.owner;});
+var weeks=D.week_order;
+document.getElementById("wk-leg").innerHTML=owners.map(function(o){
+return "<span class=\'leg-item\' id=\'leg-"+o.replace(/ /g,"-")+"\' onclick=\'toggleLeg("+JSON.stringify(o)+")\'>"+
+"<span class=\'dot\' style=\'background:"+oc(o)+"\'></span>"+o+"</span>";
+}).join("");
+var datasets=owners.map(function(o){
+var col=oc(o),dimmed=activeLeg&&activeLeg!==o;
+return{label:o,data:weeks.map(function(w){var d=D.owner_weekly[o]&&D.owner_weekly[o][w];return d?d.cum_pct:null;}),
+borderColor:dimmed?(col+"30"):col,backgroundColor:col+"18",pointBackgroundColor:dimmed?(col+"30"):col,
+tension:0.3,pointRadius:activeLeg===o?7:5,borderWidth:activeLeg===o?3:(activeLeg?1:2),
+spanGaps:false,order:activeLeg===o?0:1};
+});
+charts["weekly"]=new Chart(ctx,{type:"line",
+data:{labels:weeks.map(function(w){return D.week_labels[w];}),datasets:datasets},
+options:{responsive:true,maintainAspectRatio:false,
+plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return c.dataset.label+": "+pct(c.parsed.y);}}}},
+scales:{y:{ticks:{callback:function(v){return pct(v);}}}}}});
+owners.forEach(function(o){
+var el=document.getElementById("leg-"+o.replace(/ /g,"-"));
+if(!el) return;
+el.classList.remove("ldim","lhi");
+if(activeLeg&&activeLeg!==o) el.classList.add("ldim");
+if(activeLeg===o) el.classList.add("lhi");
+});
+}
+function toggleLeg(owner){activeLeg=(activeLeg===owner)?null:owner;buildWeeklyChart();}
+function wkBadge(res){
+if(!res||res==="BYE") return "<span class=\'wk-badge wk-bye\'>BYE</span>";
+if(res==="PEND") return "<span class=\'wk-badge wk-pend\'>—</span>";
+if(res==="W") return "<span class=\'wk-badge wk-w\'>W</span>";
+if(res==="L") return "<span class=\'wk-badge wk-l\'>L</span>";
+return "<span class=\'wk-badge wk-t\'>T</span>";
+}
+function buildWeeklyTeamTable(){
+var weeks=D.week_order;
+document.getElementById("wk-team-thead").innerHTML=
+"<tr><th class=\'tal\'>Owner / Team</th>"+
+weeks.map(function(w){return "<th>"+D.week_labels[w]+"</th>";}).join("")+"</tr>";
+var rows="";
+OWNERS_ORDER.forEach(function(owner){
+var ownerPicks=D.draft.filter(function(pk){return pk.owner===owner;});
+if(!ownerPicks.length) return;
+rows+="<tr class=\'owner-group-hd\'>"+
+"<td colspan=\'"+(weeks.length+1)+"\'>"+
+"<span class=\'odot\' style=\'background:"+oc(owner)+"\'></span>"+owner+
+"</td></tr>";
+ownerPicks.forEach(function(pick){
+var wd=D.weekly_by_team[pick.team]||{};
+var cols=weeks.map(function(w){
+var d=wd[w];
+return "<td>"+wkBadge(d?d.result:null)+"</td>";
+}).join("");
+rows+="<tr>"+
+"<td class=\'tal\' style=\'padding-left:24px\'>"+
+"<span class=\'chip\' style=\'background:"+oc(owner)+"\'>"+pick.team+"</span>"+
+"</td>"+cols+"</tr>";
+});
+});
+document.getElementById("wk-team-tbody").innerHTML=rows;
+}
+
+function renderTeams(){buildDVTable();buildTmTable();}
+function buildDVTable(){
+var dv=D.draft_value.slice().sort(function(a,b){return b.value-a.value;});
+var maxAbs=Math.max.apply(null,dv.map(function(d){return Math.abs(d.value);}));
+document.getElementById("dv-tbody").innerHTML=dv.map(function(d){
+var isPos=d.value>=0,bw=Math.round(Math.abs(d.value)/maxAbs*100);
+var vs=(isPos?"+":"")+pctD(d.value);
+var cls=isPos?"val-pos":(d.value<-0.01?"val-neg":"val-neu");
+var bar="<div style=\'width:100%;height:9px;background:var(--cream2);border:1px solid var(--border);border-radius:3px;overflow:hidden\'>"+
+"<div style=\'width:"+bw+"%;height:100%;background:"+(isPos?"var(--green)":"var(--loss)")+"\'></div></div>";
+return "<tr data-pick=\'"+d.pick+"\' data-team=\'"+d.team+"\' data-owner=\'"+d.owner+"\' data-actual_pct=\'"+d.actual_pct+"\' data-optimal_pct=\'"+d.optimal_pct+"\' data-value=\'"+d.value+"\'>"+
+"<td>"+d.pick+"</td>"+
+"<td class=\'tal\'><span class=\'chip\' style=\'background:"+oc(d.owner)+"\'>"+d.team+"</span></td>"+
+"<td class=\'tal\'>"+d.owner+"</td>"+
+"<td>"+pct(d.actual_pct)+"</td><td>"+pct(d.optimal_pct)+"</td>"+
+"<td class=\'"+cls+"\'>"+vs+"</td>"+
+"<td style=\'min-width:70px\'>"+bar+"</td>"+
+"</tr>";
+}).join("");
+}
+function buildTmTable(){
+document.getElementById("tm-tbody").innerHTML=D.team_rows.map(function(r){
+return "<tr data-owner=\'"+r.owner+"\' data-pick=\'"+r.pick+"\' data-w=\'"+r.w+"\' data-l=\'"+r.l+"\' data-t=\'"+r.t+
+"\' data-pct=\'"+r.pct+"\' data-pd=\'"+r.pd+"\' data-team=\'"+r.team+"\'>"+
+"<td>"+r.pick+"</td>"+
+"<td><span class=\'odot\' style=\'background:"+oc(r.owner)+"\'></span>"+r.owner+"</td>"+
+"<td><span class=\'chip\' style=\'background:"+oc(r.owner)+"\'>"+r.team+"</span></td>"+
+"<td class=\'wt\'>"+r.w+"</td><td class=\'lt\'>"+r.l+"</td><td class=\'tt\'>"+r.t+"</td>"+
+"<td data-hv=\'"+r.pct+"\'>"+pct(r.pct)+"</td>"+
+"<td class=\'"+(r.pd>=0?"wt":"lt")+"\'>"+fpd(r.pd)+"</td>"+
+"</tr>";
+}).join("");
+heatCol("tm-tbl",6,true);
+}
+
+function renderDraft(){
+var tmap={};
+D.team_rows.forEach(function(r){tmap[r.pick]=r;});
+var draftedRows=D.draft.map(function(d){
+var live=tmap[d.pick]||{pct:0};
+var meta=D.team_rows.find(function(r){return r.pick===d.pick;})||{};
+var p25=(meta.w2025||0)/17;
+return "<tr data-pick=\'"+d.pick+"\' data-owner=\'"+d.owner+"\' data-team=\'"+d.team+
+"\' data-name=\'"+d.name+"\' data-pct2025=\'"+p25.toFixed(4)+"\' data-pct=\'"+live.pct+"\'>"+
+"<td>"+d.pick+"</td>"+
+"<td><span class=\'odot\' style=\'background:"+oc(d.owner)+"\'></span>"+d.owner+"</td>"+
+"<td><span class=\'chip\' style=\'background:"+oc(d.owner)+"\'>"+d.team+"</span></td>"+
+"<td class=\'tal hm\' style=\'font-weight:400;color:var(--gray)\'>"+d.name+"</td>"+
+"<td data-hv=\'"+p25.toFixed(4)+"\'>"+pct(p25)+"</td>"+
+"<td data-hv=\'"+live.pct+"\'>"+pct(live.pct)+"</td>"+
+"</tr>";
+}).join("");
+var npRows=(D.not_picked||[]).map(function(r){
+var p25=(r.w2025||0)/17;
+return "<tr class=\'np-row\' data-pick=\'99\' data-owner=\'Not Picked\' data-team=\'"+r.team+
+"\' data-name=\'"+r.name+"\' data-pct2025=\'"+p25.toFixed(4)+"\' data-pct=\'"+r.pct+"\'>"+
+"<td style=\'color:var(--gray2)\'>—</td>"+
+"<td style=\'color:var(--gray)\'>Not Drafted</td>"+
+"<td><span class=\'chip\' style=\'background:#888\'>"+r.team+"</span></td>"+
+"<td class=\'tal hm\' style=\'font-weight:400;color:var(--gray)\'>"+r.name+"</td>"+
+"<td data-hv=\'"+p25.toFixed(4)+"\'>"+pct(p25)+"</td>"+
+"<td data-hv=\'"+r.pct+"\'>"+pct(r.pct)+"</td>"+
+"</tr>";
+}).join("");
+document.getElementById("dr-tbody").innerHTML=draftedRows+npRows;
+heatCol("dr-tbl",4,true,true);
+heatCol("dr-tbl",5,true,true);
+}
+
+loadData();
+</script>
+</body>
+</html>

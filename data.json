@@ -1,0 +1,1249 @@
+{
+  "updated": "2026-09-15 01:24:51",
+  "current_week": 1,
+  "total_weeks": 18,
+  "week_order": [
+    "w1"
+  ],
+  "week_labels": {
+    "w1": "Wk 1"
+  },
+  "owners_order": [
+    "MERG",
+    "MARZ",
+    "KEV",
+    "JIMMY",
+    "PHIL",
+    "DOM",
+    "ANT",
+    "LON",
+    "ADAM B",
+    "FUR"
+  ],
+  "standings": [
+    {
+      "owner": "LON",
+      "teams": [
+        "JAX",
+        "SF",
+        "TB"
+      ],
+      "w": 2,
+      "l": 1,
+      "t": 0,
+      "pd": 38,
+      "pct": 0.6667,
+      "rank": 1,
+      "gb": 0
+    },
+    {
+      "owner": "ANT",
+      "teams": [
+        "CIN",
+        "HOU",
+        "NYJ"
+      ],
+      "w": 2,
+      "l": 1,
+      "t": 0,
+      "pd": 14,
+      "pct": 0.6667,
+      "rank": 2,
+      "gb": 0.0
+    },
+    {
+      "owner": "PHIL",
+      "teams": [
+        "CHI",
+        "SEA",
+        "TEN"
+      ],
+      "w": 2,
+      "l": 1,
+      "t": 0,
+      "pd": 12,
+      "pct": 0.6667,
+      "rank": 3,
+      "gb": 0.0
+    },
+    {
+      "owner": "KEV",
+      "teams": [
+        "BAL",
+        "KC",
+        "MIA"
+      ],
+      "w": 1,
+      "l": 1,
+      "t": 0,
+      "pd": 4,
+      "pct": 0.5,
+      "rank": 4,
+      "gb": 0.5
+    },
+    {
+      "owner": "DOM",
+      "teams": [
+        "ATL",
+        "DEN",
+        "NYG"
+      ],
+      "w": 1,
+      "l": 1,
+      "t": 0,
+      "pd": 1,
+      "pct": 0.5,
+      "rank": 5,
+      "gb": 0.5
+    },
+    {
+      "owner": "ADAM B",
+      "teams": [
+        "LAC",
+        "NE",
+        "PIT"
+      ],
+      "w": 1,
+      "l": 2,
+      "t": 0,
+      "pd": -8,
+      "pct": 0.3333,
+      "rank": 6,
+      "gb": 1.0
+    },
+    {
+      "owner": "FUR",
+      "teams": [
+        "GB",
+        "NO",
+        "PHI"
+      ],
+      "w": 1,
+      "l": 2,
+      "t": 0,
+      "pd": -16,
+      "pct": 0.3333,
+      "rank": 7,
+      "gb": 1.0
+    },
+    {
+      "owner": "JIMMY",
+      "teams": [
+        "DET",
+        "IND",
+        "WAS"
+      ],
+      "w": 1,
+      "l": 2,
+      "t": 0,
+      "pd": -19,
+      "pct": 0.3333,
+      "rank": 8,
+      "gb": 1.0
+    },
+    {
+      "owner": "MERG",
+      "teams": [
+        "CAR",
+        "LAR",
+        "MIN"
+      ],
+      "w": 1,
+      "l": 2,
+      "t": 0,
+      "pd": -25,
+      "pct": 0.3333,
+      "rank": 9,
+      "gb": 1.0
+    },
+    {
+      "owner": "MARZ",
+      "teams": [
+        "BUF",
+        "CLE",
+        "DAL"
+      ],
+      "w": 1,
+      "l": 2,
+      "t": 0,
+      "pd": -27,
+      "pct": 0.3333,
+      "rank": 10,
+      "gb": 1.0
+    }
+  ],
+  "team_rows": [
+    {
+      "pick": 1,
+      "owner": "MERG",
+      "team": "LAR",
+      "name": "Los Angeles Rams",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -20,
+      "w2025": 12
+    },
+    {
+      "pick": 2,
+      "owner": "MARZ",
+      "team": "BUF",
+      "name": "Buffalo Bills",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 5,
+      "w2025": 12
+    },
+    {
+      "pick": 3,
+      "owner": "KEV",
+      "team": "BAL",
+      "name": "Baltimore Ravens",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 18,
+      "w2025": 8
+    },
+    {
+      "pick": 4,
+      "owner": "JIMMY",
+      "team": "DET",
+      "name": "Detroit Lions",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 1,
+      "w2025": 9
+    },
+    {
+      "pick": 5,
+      "owner": "PHIL",
+      "team": "SEA",
+      "name": "Seattle Seahawks",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 3,
+      "w2025": 14
+    },
+    {
+      "pick": 6,
+      "owner": "DOM",
+      "team": "DEN",
+      "name": "Denver Broncos",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": null,
+      "pd": 0,
+      "w2025": 14
+    },
+    {
+      "pick": 7,
+      "owner": "ANT",
+      "team": "CIN",
+      "name": "Cincinnati Bengals",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 6,
+      "w2025": 6
+    },
+    {
+      "pick": 8,
+      "owner": "LON",
+      "team": "SF",
+      "name": "San Francisco 49ers",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 20,
+      "w2025": 12
+    },
+    {
+      "pick": 9,
+      "owner": "ADAM B",
+      "team": "LAC",
+      "name": "Los Angeles Chargers",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -12,
+      "w2025": 11
+    },
+    {
+      "pick": 10,
+      "owner": "FUR",
+      "team": "PHI",
+      "name": "Philadelphia Eagles",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 2,
+      "w2025": 11
+    },
+    {
+      "pick": 11,
+      "owner": "ANT",
+      "team": "HOU",
+      "name": "Houston Texans",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -5,
+      "w2025": 12
+    },
+    {
+      "pick": 12,
+      "owner": "FUR",
+      "team": "GB",
+      "name": "Green Bay Packers",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -17,
+      "w2025": 10
+    },
+    {
+      "pick": 13,
+      "owner": "KEV",
+      "team": "KC",
+      "name": "Kansas City Chiefs",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": null,
+      "pd": 0,
+      "w2025": 6
+    },
+    {
+      "pick": 14,
+      "owner": "ADAM B",
+      "team": "NE",
+      "name": "New England Patriots",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -3,
+      "w2025": 14
+    },
+    {
+      "pick": 15,
+      "owner": "PHIL",
+      "team": "CHI",
+      "name": "Chicago Bears",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 22,
+      "w2025": 11
+    },
+    {
+      "pick": 16,
+      "owner": "MARZ",
+      "team": "DAL",
+      "name": "Dallas Cowboys",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -8,
+      "w2025": 8
+    },
+    {
+      "pick": 17,
+      "owner": "LON",
+      "team": "JAX",
+      "name": "Jacksonville Jaguars",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 24,
+      "w2025": 13
+    },
+    {
+      "pick": 18,
+      "owner": "JIMMY",
+      "team": "IND",
+      "name": "Indianapolis Colts",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -18,
+      "w2025": 8
+    },
+    {
+      "pick": 19,
+      "owner": "DOM",
+      "team": "NYG",
+      "name": "New York Giants",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 8,
+      "w2025": 4
+    },
+    {
+      "pick": 20,
+      "owner": "MERG",
+      "team": "MIN",
+      "name": "Minnesota Vikings",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 17,
+      "w2025": 9
+    },
+    {
+      "pick": 21,
+      "owner": "LON",
+      "team": "TB",
+      "name": "Tampa Bay Buccaneers",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -6,
+      "w2025": 8
+    },
+    {
+      "pick": 22,
+      "owner": "DOM",
+      "team": "ATL",
+      "name": "Atlanta Falcons",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -7,
+      "w2025": 8
+    },
+    {
+      "pick": 23,
+      "owner": "ADAM B",
+      "team": "PIT",
+      "name": "Pittsburgh Steelers",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 7,
+      "w2025": 10
+    },
+    {
+      "pick": 24,
+      "owner": "FUR",
+      "team": "NO",
+      "name": "New Orleans Saints",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -1,
+      "w2025": 6
+    },
+    {
+      "pick": 25,
+      "owner": "JIMMY",
+      "team": "WAS",
+      "name": "Washington Commanders",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -2,
+      "w2025": 5
+    },
+    {
+      "pick": 26,
+      "owner": "MERG",
+      "team": "CAR",
+      "name": "Carolina Panthers",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -22,
+      "w2025": 8
+    },
+    {
+      "pick": 27,
+      "owner": "PHIL",
+      "team": "TEN",
+      "name": "Tennessee Titans",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -13,
+      "w2025": 3
+    },
+    {
+      "pick": 28,
+      "owner": "ANT",
+      "team": "NYJ",
+      "name": "New York Jets",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": 1.0,
+      "pd": 13,
+      "w2025": 3
+    },
+    {
+      "pick": 29,
+      "owner": "MARZ",
+      "team": "CLE",
+      "name": "Cleveland Browns",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -24,
+      "w2025": 5
+    },
+    {
+      "pick": 30,
+      "owner": "KEV",
+      "team": "MIA",
+      "name": "Miami Dolphins",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": 0.0,
+      "pd": -14,
+      "w2025": 7
+    }
+  ],
+  "draft": [
+    {
+      "pick": 1,
+      "owner": "MERG",
+      "team": "LAR",
+      "name": "Los Angeles Rams"
+    },
+    {
+      "pick": 2,
+      "owner": "MARZ",
+      "team": "BUF",
+      "name": "Buffalo Bills"
+    },
+    {
+      "pick": 3,
+      "owner": "KEV",
+      "team": "BAL",
+      "name": "Baltimore Ravens"
+    },
+    {
+      "pick": 4,
+      "owner": "JIMMY",
+      "team": "DET",
+      "name": "Detroit Lions"
+    },
+    {
+      "pick": 5,
+      "owner": "PHIL",
+      "team": "SEA",
+      "name": "Seattle Seahawks"
+    },
+    {
+      "pick": 6,
+      "owner": "DOM",
+      "team": "DEN",
+      "name": "Denver Broncos"
+    },
+    {
+      "pick": 7,
+      "owner": "ANT",
+      "team": "CIN",
+      "name": "Cincinnati Bengals"
+    },
+    {
+      "pick": 8,
+      "owner": "LON",
+      "team": "SF",
+      "name": "San Francisco 49ers"
+    },
+    {
+      "pick": 9,
+      "owner": "ADAM B",
+      "team": "LAC",
+      "name": "Los Angeles Chargers"
+    },
+    {
+      "pick": 10,
+      "owner": "FUR",
+      "team": "PHI",
+      "name": "Philadelphia Eagles"
+    },
+    {
+      "pick": 11,
+      "owner": "ANT",
+      "team": "HOU",
+      "name": "Houston Texans"
+    },
+    {
+      "pick": 12,
+      "owner": "FUR",
+      "team": "GB",
+      "name": "Green Bay Packers"
+    },
+    {
+      "pick": 13,
+      "owner": "KEV",
+      "team": "KC",
+      "name": "Kansas City Chiefs"
+    },
+    {
+      "pick": 14,
+      "owner": "ADAM B",
+      "team": "NE",
+      "name": "New England Patriots"
+    },
+    {
+      "pick": 15,
+      "owner": "PHIL",
+      "team": "CHI",
+      "name": "Chicago Bears"
+    },
+    {
+      "pick": 16,
+      "owner": "MARZ",
+      "team": "DAL",
+      "name": "Dallas Cowboys"
+    },
+    {
+      "pick": 17,
+      "owner": "LON",
+      "team": "JAX",
+      "name": "Jacksonville Jaguars"
+    },
+    {
+      "pick": 18,
+      "owner": "JIMMY",
+      "team": "IND",
+      "name": "Indianapolis Colts"
+    },
+    {
+      "pick": 19,
+      "owner": "DOM",
+      "team": "NYG",
+      "name": "New York Giants"
+    },
+    {
+      "pick": 20,
+      "owner": "MERG",
+      "team": "MIN",
+      "name": "Minnesota Vikings"
+    },
+    {
+      "pick": 21,
+      "owner": "LON",
+      "team": "TB",
+      "name": "Tampa Bay Buccaneers"
+    },
+    {
+      "pick": 22,
+      "owner": "DOM",
+      "team": "ATL",
+      "name": "Atlanta Falcons"
+    },
+    {
+      "pick": 23,
+      "owner": "ADAM B",
+      "team": "PIT",
+      "name": "Pittsburgh Steelers"
+    },
+    {
+      "pick": 24,
+      "owner": "FUR",
+      "team": "NO",
+      "name": "New Orleans Saints"
+    },
+    {
+      "pick": 25,
+      "owner": "JIMMY",
+      "team": "WAS",
+      "name": "Washington Commanders"
+    },
+    {
+      "pick": 26,
+      "owner": "MERG",
+      "team": "CAR",
+      "name": "Carolina Panthers"
+    },
+    {
+      "pick": 27,
+      "owner": "PHIL",
+      "team": "TEN",
+      "name": "Tennessee Titans"
+    },
+    {
+      "pick": 28,
+      "owner": "ANT",
+      "team": "NYJ",
+      "name": "New York Jets"
+    },
+    {
+      "pick": 29,
+      "owner": "MARZ",
+      "team": "CLE",
+      "name": "Cleveland Browns"
+    },
+    {
+      "pick": 30,
+      "owner": "KEV",
+      "team": "MIA",
+      "name": "Miami Dolphins"
+    }
+  ],
+  "not_picked": [
+    {
+      "team": "ARI",
+      "name": "Arizona Cardinals",
+      "pct": 1.0,
+      "w2025": 3,
+      "pd": 12,
+      "w": 1,
+      "l": 0
+    },
+    {
+      "team": "LV",
+      "name": "Las Vegas Raiders",
+      "pct": 1.0,
+      "w2025": 3,
+      "pd": 14,
+      "w": 1,
+      "l": 0
+    }
+  ],
+  "draft_value": [
+    {
+      "pick": 1,
+      "team": "LAR",
+      "owner": "MERG",
+      "actual_pct": 0.0,
+      "optimal_pct": 1.0,
+      "value": -1.0
+    },
+    {
+      "pick": 2,
+      "team": "BUF",
+      "owner": "MARZ",
+      "actual_pct": 1.0,
+      "optimal_pct": 1.0,
+      "value": 0.0
+    },
+    {
+      "pick": 3,
+      "team": "BAL",
+      "owner": "KEV",
+      "actual_pct": 1.0,
+      "optimal_pct": 1.0,
+      "value": 0.0
+    },
+    {
+      "pick": 4,
+      "team": "DET",
+      "owner": "JIMMY",
+      "actual_pct": 1.0,
+      "optimal_pct": 1.0,
+      "value": 0.0
+    },
+    {
+      "pick": 5,
+      "team": "SEA",
+      "owner": "PHIL",
+      "actual_pct": 1.0,
+      "optimal_pct": 1.0,
+      "value": 0.0
+    },
+    {
+      "pick": 7,
+      "team": "CIN",
+      "owner": "ANT",
+      "actual_pct": 1.0,
+      "optimal_pct": 1.0,
+      "value": 0.0
+    },
+    {
+      "pick": 8,
+      "team": "SF",
+      "owner": "LON",
+      "actual_pct": 1.0,
+      "optimal_pct": 1.0,
+      "value": 0.0
+    },
+    {
+      "pick": 9,
+      "team": "LAC",
+      "owner": "ADAM B",
+      "actual_pct": 0.0,
+      "optimal_pct": 1.0,
+      "value": -1.0
+    },
+    {
+      "pick": 10,
+      "team": "PHI",
+      "owner": "FUR",
+      "actual_pct": 1.0,
+      "optimal_pct": 1.0,
+      "value": 0.0
+    },
+    {
+      "pick": 11,
+      "team": "HOU",
+      "owner": "ANT",
+      "actual_pct": 0.0,
+      "optimal_pct": 1.0,
+      "value": -1.0
+    },
+    {
+      "pick": 12,
+      "team": "GB",
+      "owner": "FUR",
+      "actual_pct": 0.0,
+      "optimal_pct": 1.0,
+      "value": -1.0
+    },
+    {
+      "pick": 14,
+      "team": "NE",
+      "owner": "ADAM B",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.8235,
+      "value": -0.8235
+    },
+    {
+      "pick": 15,
+      "team": "CHI",
+      "owner": "PHIL",
+      "actual_pct": 1.0,
+      "optimal_pct": 0.3529,
+      "value": 0.6471
+    },
+    {
+      "pick": 16,
+      "team": "DAL",
+      "owner": "MARZ",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 17,
+      "team": "JAX",
+      "owner": "LON",
+      "actual_pct": 1.0,
+      "optimal_pct": 0.0,
+      "value": 1.0
+    },
+    {
+      "pick": 18,
+      "team": "IND",
+      "owner": "JIMMY",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 19,
+      "team": "NYG",
+      "owner": "DOM",
+      "actual_pct": 1.0,
+      "optimal_pct": 0.0,
+      "value": 1.0
+    },
+    {
+      "pick": 20,
+      "team": "MIN",
+      "owner": "MERG",
+      "actual_pct": 1.0,
+      "optimal_pct": 0.0,
+      "value": 1.0
+    },
+    {
+      "pick": 21,
+      "team": "TB",
+      "owner": "LON",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 22,
+      "team": "ATL",
+      "owner": "DOM",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 23,
+      "team": "PIT",
+      "owner": "ADAM B",
+      "actual_pct": 1.0,
+      "optimal_pct": 0.0,
+      "value": 1.0
+    },
+    {
+      "pick": 24,
+      "team": "NO",
+      "owner": "FUR",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 25,
+      "team": "WAS",
+      "owner": "JIMMY",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 26,
+      "team": "CAR",
+      "owner": "MERG",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 27,
+      "team": "TEN",
+      "owner": "PHIL",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 28,
+      "team": "NYJ",
+      "owner": "ANT",
+      "actual_pct": 1.0,
+      "optimal_pct": 0.0,
+      "value": 1.0
+    },
+    {
+      "pick": 29,
+      "team": "CLE",
+      "owner": "MARZ",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    },
+    {
+      "pick": 30,
+      "team": "MIA",
+      "owner": "KEV",
+      "actual_pct": 0.0,
+      "optimal_pct": 0.0,
+      "value": 0.0
+    }
+  ],
+  "owner_weekly": {
+    "ADAM B": {
+      "w1": {
+        "w": 1,
+        "l": 2,
+        "t": 0,
+        "pct": 0.3333,
+        "cum_pct": 0.3333,
+        "cum_w": 1,
+        "cum_l": 2,
+        "cum_t": 0
+      }
+    },
+    "ANT": {
+      "w1": {
+        "w": 2,
+        "l": 1,
+        "t": 0,
+        "pct": 0.6667,
+        "cum_pct": 0.6667,
+        "cum_w": 2,
+        "cum_l": 1,
+        "cum_t": 0
+      }
+    },
+    "DOM": {
+      "w1": {
+        "w": 1,
+        "l": 1,
+        "t": 0,
+        "pct": 0.5,
+        "cum_pct": 0.5,
+        "cum_w": 1,
+        "cum_l": 1,
+        "cum_t": 0
+      }
+    },
+    "FUR": {
+      "w1": {
+        "w": 1,
+        "l": 2,
+        "t": 0,
+        "pct": 0.3333,
+        "cum_pct": 0.3333,
+        "cum_w": 1,
+        "cum_l": 2,
+        "cum_t": 0
+      }
+    },
+    "JIMMY": {
+      "w1": {
+        "w": 1,
+        "l": 2,
+        "t": 0,
+        "pct": 0.3333,
+        "cum_pct": 0.3333,
+        "cum_w": 1,
+        "cum_l": 2,
+        "cum_t": 0
+      }
+    },
+    "KEV": {
+      "w1": {
+        "w": 1,
+        "l": 1,
+        "t": 0,
+        "pct": 0.5,
+        "cum_pct": 0.5,
+        "cum_w": 1,
+        "cum_l": 1,
+        "cum_t": 0
+      }
+    },
+    "LON": {
+      "w1": {
+        "w": 2,
+        "l": 1,
+        "t": 0,
+        "pct": 0.6667,
+        "cum_pct": 0.6667,
+        "cum_w": 2,
+        "cum_l": 1,
+        "cum_t": 0
+      }
+    },
+    "MARZ": {
+      "w1": {
+        "w": 1,
+        "l": 2,
+        "t": 0,
+        "pct": 0.3333,
+        "cum_pct": 0.3333,
+        "cum_w": 1,
+        "cum_l": 2,
+        "cum_t": 0
+      }
+    },
+    "MERG": {
+      "w1": {
+        "w": 1,
+        "l": 2,
+        "t": 0,
+        "pct": 0.3333,
+        "cum_pct": 0.3333,
+        "cum_w": 1,
+        "cum_l": 2,
+        "cum_t": 0
+      }
+    },
+    "PHIL": {
+      "w1": {
+        "w": 2,
+        "l": 1,
+        "t": 0,
+        "pct": 0.6667,
+        "cum_pct": 0.6667,
+        "cum_w": 2,
+        "cum_l": 1,
+        "cum_t": 0
+      }
+    }
+  },
+  "weekly_by_team": {
+    "LAC": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "NE": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "PIT": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "CIN": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "HOU": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "NYJ": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "ATL": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "DEN": {
+      "w1": {
+        "result": "PEND"
+      }
+    },
+    "NYG": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "GB": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "NO": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "PHI": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "DET": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "IND": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "WAS": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "BAL": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "KC": {
+      "w1": {
+        "result": "PEND"
+      }
+    },
+    "MIA": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "JAX": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "SF": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "TB": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "BUF": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "CLE": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "DAL": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "CAR": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "LAR": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "MIN": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "CHI": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "SEA": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "TEN": {
+      "w1": {
+        "result": "L"
+      }
+    },
+    "ARI": {
+      "w1": {
+        "result": "W"
+      }
+    },
+    "LV": {
+      "w1": {
+        "result": "W"
+      }
+    }
+  }
+}
