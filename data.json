@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15 01:24:51",
+  "updated": "2026-09-15 13:01:23",
   "current_week": 1,
   "total_weeks": 18,
   "week_order": [
@@ -37,6 +37,21 @@
       "gb": 0
     },
     {
+      "owner": "KEV",
+      "teams": [
+        "BAL",
+        "KC",
+        "MIA"
+      ],
+      "w": 2,
+      "l": 1,
+      "t": 0,
+      "pd": 25,
+      "pct": 0.6667,
+      "rank": 2,
+      "gb": 0.0
+    },
+    {
       "owner": "ANT",
       "teams": [
         "CIN",
@@ -48,7 +63,7 @@
       "t": 0,
       "pd": 14,
       "pct": 0.6667,
-      "rank": 2,
+      "rank": 3,
       "gb": 0.0
     },
     {
@@ -63,38 +78,8 @@
       "t": 0,
       "pd": 12,
       "pct": 0.6667,
-      "rank": 3,
-      "gb": 0.0
-    },
-    {
-      "owner": "KEV",
-      "teams": [
-        "BAL",
-        "KC",
-        "MIA"
-      ],
-      "w": 1,
-      "l": 1,
-      "t": 0,
-      "pd": 4,
-      "pct": 0.5,
       "rank": 4,
-      "gb": 0.5
-    },
-    {
-      "owner": "DOM",
-      "teams": [
-        "ATL",
-        "DEN",
-        "NYG"
-      ],
-      "w": 1,
-      "l": 1,
-      "t": 0,
-      "pd": 1,
-      "pct": 0.5,
-      "rank": 5,
-      "gb": 0.5
+      "gb": 0.0
     },
     {
       "owner": "ADAM B",
@@ -108,7 +93,7 @@
       "t": 0,
       "pd": -8,
       "pct": 0.3333,
-      "rank": 6,
+      "rank": 5,
       "gb": 1.0
     },
     {
@@ -123,7 +108,7 @@
       "t": 0,
       "pd": -16,
       "pct": 0.3333,
-      "rank": 7,
+      "rank": 6,
       "gb": 1.0
     },
     {
@@ -137,6 +122,21 @@
       "l": 2,
       "t": 0,
       "pd": -19,
+      "pct": 0.3333,
+      "rank": 7,
+      "gb": 1.0
+    },
+    {
+      "owner": "DOM",
+      "teams": [
+        "ATL",
+        "DEN",
+        "NYG"
+      ],
+      "w": 1,
+      "l": 2,
+      "t": 0,
+      "pd": -20,
       "pct": 0.3333,
       "rank": 8,
       "gb": 1.0
@@ -239,10 +239,10 @@
       "team": "DEN",
       "name": "Denver Broncos",
       "w": 0,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": null,
-      "pd": 0,
+      "pct": 0.0,
+      "pd": -21,
       "w2025": 14
     },
     {
@@ -322,11 +322,11 @@
       "owner": "KEV",
       "team": "KC",
       "name": "Kansas City Chiefs",
-      "w": 0,
+      "w": 1,
       "l": 0,
       "t": 0,
-      "pct": null,
-      "pd": 0,
+      "pct": 1.0,
+      "pd": 21,
       "w2025": 6
     },
     {
@@ -778,6 +778,14 @@
       "value": 0.0
     },
     {
+      "pick": 6,
+      "team": "DEN",
+      "owner": "DOM",
+      "actual_pct": 0.0,
+      "optimal_pct": 1.0,
+      "value": -1.0
+    },
+    {
       "pick": 7,
       "team": "CIN",
       "owner": "ANT",
@@ -826,20 +834,28 @@
       "value": -1.0
     },
     {
+      "pick": 13,
+      "team": "KC",
+      "owner": "KEV",
+      "actual_pct": 1.0,
+      "optimal_pct": 1.0,
+      "value": 0.0
+    },
+    {
       "pick": 14,
       "team": "NE",
       "owner": "ADAM B",
       "actual_pct": 0.0,
-      "optimal_pct": 0.8235,
-      "value": -0.8235
+      "optimal_pct": 1.0,
+      "value": -1.0
     },
     {
       "pick": 15,
       "team": "CHI",
       "owner": "PHIL",
       "actual_pct": 1.0,
-      "optimal_pct": 0.3529,
-      "value": 0.6471
+      "optimal_pct": 0.0,
+      "value": 1.0
     },
     {
       "pick": 16,
@@ -990,12 +1006,12 @@
     "DOM": {
       "w1": {
         "w": 1,
-        "l": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.5,
-        "cum_pct": 0.5,
+        "pct": 0.3333,
+        "cum_pct": 0.3333,
         "cum_w": 1,
-        "cum_l": 1,
+        "cum_l": 2,
         "cum_t": 0
       }
     },
@@ -1025,12 +1041,12 @@
     },
     "KEV": {
       "w1": {
-        "w": 1,
+        "w": 2,
         "l": 1,
         "t": 0,
-        "pct": 0.5,
-        "cum_pct": 0.5,
-        "cum_w": 1,
+        "pct": 0.6667,
+        "cum_pct": 0.6667,
+        "cum_w": 2,
         "cum_l": 1,
         "cum_t": 0
       }
@@ -1122,7 +1138,7 @@
     },
     "DEN": {
       "w1": {
-        "result": "PEND"
+        "result": "L"
       }
     },
     "NYG": {
@@ -1167,7 +1183,7 @@
     },
     "KC": {
       "w1": {
-        "result": "PEND"
+        "result": "W"
       }
     },
     "MIA": {
