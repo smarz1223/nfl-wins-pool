@@ -2,8 +2,8 @@ name: Weekly NFL Wins Pool data refresh
 
 on:
   schedule:
-    # Every Tuesday at 11:00 UTC (7:00 AM ET) - after Monday Night Football
-    - cron: '0 11 * * 2'
+    # Every day at 11:00 UTC (7:00 AM ET)
+    - cron: '0 11 * * *'
   workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
 
 permissions:
