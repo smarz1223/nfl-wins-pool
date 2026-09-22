@@ -124,21 +124,31 @@ def compute_standings(owner_teams, team_meta):
     return owners, standings
 
 
-def compute_draft_value(draft, team_meta):
-    def eff_pct(tm):
-        return tm["pct"] if tm["pct"] is not None else round(tm["w2025"] / 17, 4)
+def compute_draft_value(draft, team_meta, current_week_num):
+    """Ranks by raw win count (not win %), per Marz's request - short NFL
+    season, wins are easier to read than percentages, and he's OK with the
+    minor unfairness of bye-week teams having played one fewer game.
+    For a team with 0 games so far, falls back to last year's pace scaled
+    to how many weeks have been played, so it's still comparable in
+    win-count terms (not a raw 17-game total dropped into a 3-game race)."""
+    def eff_wins(tm):
+        if tm["pct"] is not None:
+            return tm["w"]
+        if current_week_num <= 0:
+            return 0
+        return round((tm["w2025"] / 17) * current_week_num)
 
-    all_sorted = sorted(team_meta.values(), key=lambda x: -eff_pct(x))
+    all_sorted = sorted(team_meta.values(), key=lambda x: -eff_wins(x))
     draft_value = []
     for d in draft:
         tm = team_meta[d["team"]]
         if tm["pct"] is None:
             continue
-        optimal = eff_pct(all_sorted[d["pick"] - 1]) if d["pick"] - 1 < len(all_sorted) else tm["pct"]
+        optimal = eff_wins(all_sorted[d["pick"] - 1]) if d["pick"] - 1 < len(all_sorted) else tm["w"]
         draft_value.append({
             "pick": d["pick"], "team": d["team"], "owner": d["owner"],
-            "actual_pct": tm["pct"], "optimal_pct": round(optimal, 4),
-            "value": round(tm["pct"] - optimal, 4),
+            "actual_wins": tm["w"], "optimal_wins": optimal,
+            "value": tm["w"] - optimal,
         })
     return draft_value
 
@@ -233,16 +243,17 @@ def main():
     csv_text = fetch_csv_text()
     draft, team_meta, owner_teams, not_picked = parse_csv(csv_text)
     owners, standings = compute_standings(owner_teams, team_meta)
-    draft_value = compute_draft_value(draft, team_meta)
 
     snapshots = load_snapshots()
     snapshots, current_week_key = update_snapshots(snapshots, team_meta, not_picked)
     with open(SNAPSHOTS_PATH, "w") as f:
         json.dump(snapshots, f, indent=2)
 
+    current_week_num = int(current_week_key[1:]) if current_week_key else 0
+    draft_value = compute_draft_value(draft, team_meta, current_week_num)
+
     all_team_abbrs = list(team_meta.keys()) + [np["team"] for np in not_picked]
     weeks, week_labels, weekly_by_team, owner_weekly = build_weekly_data(snapshots, all_team_abbrs, owner_teams)
-    current_week_num = int(current_week_key[1:]) if current_week_key else 0
 
     team_rows = sorted(team_meta.values(), key=lambda x: x["pick"])
     for t in team_rows:
