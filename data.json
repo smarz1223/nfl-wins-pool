@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21 18:05:17",
+  "updated": "2026-09-22 14:29:42",
   "current_week": 2,
   "total_weeks": 18,
   "week_order": [
@@ -24,6 +24,21 @@
   ],
   "standings": [
     {
+      "owner": "MERG",
+      "teams": [
+        "CAR",
+        "LAR",
+        "MIN"
+      ],
+      "w": 4,
+      "l": 2,
+      "t": 0,
+      "pd": 34,
+      "pct": 0.6667,
+      "rank": 1,
+      "gb": 0
+    },
+    {
       "owner": "MARZ",
       "teams": [
         "BUF",
@@ -35,8 +50,8 @@
       "t": 0,
       "pd": 4,
       "pct": 0.6667,
-      "rank": 1,
-      "gb": 0
+      "rank": 2,
+      "gb": 0.0
     },
     {
       "owner": "FUR",
@@ -50,23 +65,8 @@
       "t": 0,
       "pd": -2,
       "pct": 0.6667,
-      "rank": 2,
-      "gb": 0.0
-    },
-    {
-      "owner": "MERG",
-      "teams": [
-        "CAR",
-        "LAR",
-        "MIN"
-      ],
-      "w": 3,
-      "l": 2,
-      "t": 0,
-      "pd": 12,
-      "pct": 0.6,
       "rank": 3,
-      "gb": 0.5
+      "gb": 0.0
     },
     {
       "owner": "LON",
@@ -129,21 +129,6 @@
       "gb": 1.0
     },
     {
-      "owner": "DOM",
-      "teams": [
-        "ATL",
-        "DEN",
-        "NYG"
-      ],
-      "w": 2,
-      "l": 3,
-      "t": 0,
-      "pd": -44,
-      "pct": 0.4,
-      "rank": 8,
-      "gb": 1.5
-    },
-    {
       "owner": "ADAM B",
       "teams": [
         "LAC",
@@ -154,6 +139,21 @@
       "l": 4,
       "t": 0,
       "pd": -20,
+      "pct": 0.3333,
+      "rank": 8,
+      "gb": 2.0
+    },
+    {
+      "owner": "DOM",
+      "teams": [
+        "ATL",
+        "DEN",
+        "NYG"
+      ],
+      "w": 2,
+      "l": 4,
+      "t": 0,
+      "pd": -66,
       "pct": 0.3333,
       "rank": 9,
       "gb": 2.0
@@ -180,11 +180,11 @@
       "owner": "MERG",
       "team": "LAR",
       "name": "Los Angeles Rams",
-      "w": 0,
+      "w": 1,
       "l": 1,
       "t": 0,
-      "pct": 0.0,
-      "pd": -20,
+      "pct": 0.5,
+      "pd": 2,
       "w2025": 12
     },
     {
@@ -397,10 +397,10 @@
       "team": "NYG",
       "name": "New York Giants",
       "w": 1,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": 1.0,
-      "pd": 8,
+      "pct": 0.5,
+      "pd": -14,
       "w2025": 4
     },
     {
@@ -743,9 +743,9 @@
       "pick": 1,
       "team": "LAR",
       "owner": "MERG",
-      "actual_pct": 0.0,
+      "actual_pct": 0.5,
       "optimal_pct": 1.0,
-      "value": -1.0
+      "value": -0.5
     },
     {
       "pick": 2,
@@ -800,8 +800,8 @@
       "team": "SF",
       "owner": "LON",
       "actual_pct": 1.0,
-      "optimal_pct": 1.0,
-      "value": 0.0
+      "optimal_pct": 0.5,
+      "value": 0.5
     },
     {
       "pick": 9,
@@ -887,9 +887,9 @@
       "pick": 19,
       "team": "NYG",
       "owner": "DOM",
-      "actual_pct": 1.0,
+      "actual_pct": 0.5,
       "optimal_pct": 0.5,
-      "value": 0.5
+      "value": 0.0
     },
     {
       "pick": 20,
@@ -912,8 +912,8 @@
       "team": "ATL",
       "owner": "DOM",
       "actual_pct": 0.0,
-      "optimal_pct": 0.0,
-      "value": 0.0
+      "optimal_pct": 0.5,
+      "value": -0.5
     },
     {
       "pick": 23,
@@ -1038,12 +1038,12 @@
       },
       "w2": {
         "w": 1,
-        "l": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.4,
-        "cum_pct": 0.4,
+        "pct": 0.3333,
+        "cum_pct": 0.3333,
         "cum_w": 2,
-        "cum_l": 3,
+        "cum_l": 4,
         "cum_t": 0
       }
     },
@@ -1169,12 +1169,12 @@
         "cum_t": 0
       },
       "w2": {
-        "w": 2,
+        "w": 3,
         "l": 0,
         "t": 0,
-        "pct": 0.6,
-        "cum_pct": 0.6,
-        "cum_w": 3,
+        "pct": 0.6667,
+        "cum_pct": 0.6667,
+        "cum_w": 4,
         "cum_l": 2,
         "cum_t": 0
       }
@@ -1272,7 +1272,7 @@
         "result": "W"
       },
       "w2": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "GB": {
@@ -1408,7 +1408,7 @@
         "result": "L"
       },
       "w2": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "MIN": {
