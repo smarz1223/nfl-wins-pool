@@ -2,8 +2,8 @@ name: Weekly NFL Wins Pool data refresh
 
 on:
   schedule:
-    # Every day at 11:00 UTC (7:00 AM ET)
-    - cron: '0 11 * * *'
+    # Every day at 11:07 UTC (7:07 AM ET / 6:07 AM EST) - offset off :00 to avoid GitHub's peak cron congestion
+    - cron: '7 11 * * *'
   workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
 
 permissions:
