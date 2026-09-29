@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28 18:33:24",
+  "updated": "2026-09-29 15:37:18",
   "current_week": 3,
   "total_weeks": 18,
   "week_order": [
@@ -101,19 +101,19 @@
       "gb": 1.0
     },
     {
-      "owner": "FUR",
+      "owner": "PHIL",
       "teams": [
-        "GB",
-        "NO",
-        "PHI"
+        "CHI",
+        "SEA",
+        "TEN"
       ],
       "w": 4,
-      "l": 4,
+      "l": 5,
       "t": 0,
-      "pd": -31,
-      "pct": 0.5,
+      "pd": 39,
+      "pct": 0.4444,
       "rank": 6,
-      "gb": 1.5
+      "gb": 2.0
     },
     {
       "owner": "JIMMY",
@@ -131,19 +131,19 @@
       "gb": 2.0
     },
     {
-      "owner": "PHIL",
+      "owner": "FUR",
       "teams": [
-        "CHI",
-        "SEA",
-        "TEN"
+        "GB",
+        "NO",
+        "PHI"
       ],
-      "w": 3,
+      "w": 4,
       "l": 5,
       "t": 0,
-      "pd": 19,
-      "pct": 0.375,
+      "pd": -51,
+      "pct": 0.4444,
       "rank": 8,
-      "gb": 2.5
+      "gb": 2.0
     },
     {
       "owner": "ANT",
@@ -291,10 +291,10 @@
       "team": "PHI",
       "name": "Philadelphia Eagles",
       "w": 2,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": 1.0,
-      "pd": 6,
+      "pct": 0.6667,
+      "pd": -14,
       "w2025": 11
     },
     {
@@ -350,11 +350,11 @@
       "owner": "PHIL",
       "team": "CHI",
       "name": "Chicago Bears",
-      "w": 1,
+      "w": 2,
       "l": 1,
       "t": 0,
-      "pct": 0.5,
-      "pd": 16,
+      "pct": 0.6667,
+      "pd": 36,
       "w2025": 11
     },
     {
@@ -857,8 +857,8 @@
       "pick": 15,
       "team": "CHI",
       "owner": "PHIL",
-      "actual_wins": 1,
-      "optimal_wins": 1,
+      "actual_wins": 2,
+      "optimal_wins": 2,
       "value": 0
     },
     {
@@ -1102,12 +1102,12 @@
       },
       "w3": {
         "w": 0,
-        "l": 2,
+        "l": 3,
         "t": 0,
-        "pct": 0.5,
-        "cum_pct": 0.5,
+        "pct": 0.4444,
+        "cum_pct": 0.4444,
         "cum_w": 4,
-        "cum_l": 4,
+        "cum_l": 5,
         "cum_t": 0
       }
     },
@@ -1293,12 +1293,12 @@
         "cum_t": 0
       },
       "w3": {
-        "w": 0,
+        "w": 1,
         "l": 2,
         "t": 0,
-        "pct": 0.375,
-        "cum_pct": 0.375,
-        "cum_w": 3,
+        "pct": 0.4444,
+        "cum_pct": 0.4444,
+        "cum_w": 4,
         "cum_l": 5,
         "cum_t": 0
       }
@@ -1434,7 +1434,7 @@
         "result": "W"
       },
       "w3": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "DET": {
@@ -1610,7 +1610,7 @@
         "result": "L"
       },
       "w3": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "SEA": {
