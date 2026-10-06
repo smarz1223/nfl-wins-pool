@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04 15:43:27",
+  "updated": "2026-10-06 13:37:25",
   "current_week": 4,
   "total_weeks": 18,
   "week_order": [
@@ -28,19 +28,34 @@
   ],
   "standings": [
     {
+      "owner": "MERG",
+      "teams": [
+        "CAR",
+        "LAR",
+        "MIN"
+      ],
+      "w": 8,
+      "l": 4,
+      "t": 0,
+      "pd": 49,
+      "pct": 0.6667,
+      "rank": 1,
+      "gb": 0
+    },
+    {
       "owner": "MARZ",
       "teams": [
         "BUF",
         "CLE",
         "DAL"
       ],
-      "w": 7,
-      "l": 3,
+      "w": 8,
+      "l": 4,
       "t": 0,
-      "pd": 15,
-      "pct": 0.7,
-      "rank": 1,
-      "gb": 0
+      "pd": 16,
+      "pct": 0.6667,
+      "rank": 2,
+      "gb": 0.0
     },
     {
       "owner": "LON",
@@ -49,28 +64,13 @@
         "SF",
         "TB"
       ],
-      "w": 5,
-      "l": 4,
+      "w": 7,
+      "l": 5,
       "t": 0,
-      "pd": 77,
-      "pct": 0.5556,
-      "rank": 2,
-      "gb": 1.5
-    },
-    {
-      "owner": "MERG",
-      "teams": [
-        "CAR",
-        "LAR",
-        "MIN"
-      ],
-      "w": 5,
-      "l": 4,
-      "t": 0,
-      "pd": 34,
-      "pct": 0.5556,
+      "pd": 89,
+      "pct": 0.5833,
       "rank": 3,
-      "gb": 1.5
+      "gb": 1.0
     },
     {
       "owner": "KEV",
@@ -79,13 +79,13 @@
         "KC",
         "MIA"
       ],
-      "w": 5,
-      "l": 4,
+      "w": 7,
+      "l": 5,
       "t": 0,
-      "pd": 2,
-      "pct": 0.5556,
+      "pd": 6,
+      "pct": 0.5833,
       "rank": 4,
-      "gb": 1.5
+      "gb": 1.0
     },
     {
       "owner": "DOM",
@@ -94,13 +94,13 @@
         "DEN",
         "NYG"
       ],
-      "w": 5,
-      "l": 4,
+      "w": 7,
+      "l": 5,
       "t": 0,
-      "pd": -36,
-      "pct": 0.5556,
+      "pd": -13,
+      "pct": 0.5833,
       "rank": 5,
-      "gb": 1.5
+      "gb": 1.0
     },
     {
       "owner": "PHIL",
@@ -109,13 +109,13 @@
         "SEA",
         "TEN"
       ],
-      "w": 4,
-      "l": 5,
+      "w": 6,
+      "l": 6,
       "t": 0,
-      "pd": 39,
-      "pct": 0.4444,
+      "pd": 51,
+      "pct": 0.5,
       "rank": 6,
-      "gb": 2.5
+      "gb": 2.0
     },
     {
       "owner": "JIMMY",
@@ -124,13 +124,13 @@
         "IND",
         "WAS"
       ],
-      "w": 4,
-      "l": 5,
+      "w": 5,
+      "l": 7,
       "t": 0,
-      "pd": -38,
-      "pct": 0.4444,
+      "pd": -44,
+      "pct": 0.4167,
       "rank": 7,
-      "gb": 2.5
+      "gb": 3.0
     },
     {
       "owner": "FUR",
@@ -139,13 +139,28 @@
         "NO",
         "PHI"
       ],
-      "w": 4,
-      "l": 5,
+      "w": 5,
+      "l": 7,
       "t": 0,
-      "pd": -51,
-      "pct": 0.4444,
+      "pd": -73,
+      "pct": 0.4167,
       "rank": 8,
-      "gb": 2.5
+      "gb": 3.0
+    },
+    {
+      "owner": "ADAM B",
+      "teams": [
+        "LAC",
+        "NE",
+        "PIT"
+      ],
+      "w": 4,
+      "l": 8,
+      "t": 0,
+      "pd": -61,
+      "pct": 0.3333,
+      "rank": 9,
+      "gb": 4.0
     },
     {
       "owner": "ANT",
@@ -155,27 +170,12 @@
         "NYJ"
       ],
       "w": 3,
-      "l": 6,
+      "l": 9,
       "t": 0,
-      "pd": -1,
-      "pct": 0.3333,
-      "rank": 9,
-      "gb": 3.5
-    },
-    {
-      "owner": "ADAM B",
-      "teams": [
-        "LAC",
-        "NE",
-        "PIT"
-      ],
-      "w": 3,
-      "l": 7,
-      "t": 0,
-      "pd": -57,
-      "pct": 0.3,
+      "pd": -21,
+      "pct": 0.25,
       "rank": 10,
-      "gb": 4.0
+      "gb": 5.0
     }
   ],
   "team_rows": [
@@ -184,11 +184,11 @@
       "owner": "MERG",
       "team": "LAR",
       "name": "Los Angeles Rams",
-      "w": 1,
+      "w": 2,
       "l": 2,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -2,
+      "pct": 0.5,
+      "pd": 2,
       "w2025": 12
     },
     {
@@ -197,10 +197,10 @@
       "team": "BUF",
       "name": "Buffalo Bills",
       "w": 3,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": 1.0,
-      "pd": 23,
+      "pct": 0.75,
+      "pd": 20,
       "w2025": 12
     },
     {
@@ -208,11 +208,11 @@
       "owner": "KEV",
       "team": "BAL",
       "name": "Baltimore Ravens",
-      "w": 2,
+      "w": 3,
       "l": 1,
       "t": 0,
-      "pct": 0.6667,
-      "pd": 14,
+      "pct": 0.75,
+      "pd": 20,
       "w2025": 8
     },
     {
@@ -221,10 +221,10 @@
       "team": "DET",
       "name": "Detroit Lions",
       "w": 2,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": 0.6667,
-      "pd": -2,
+      "pct": 0.5,
+      "pd": -8,
       "w2025": 9
     },
     {
@@ -232,11 +232,11 @@
       "owner": "PHIL",
       "team": "SEA",
       "name": "Seattle Seahawks",
-      "w": 2,
+      "w": 3,
       "l": 1,
       "t": 0,
-      "pct": 0.6667,
-      "pd": 25,
+      "pct": 0.75,
+      "pd": 32,
       "w2025": 14
     },
     {
@@ -245,10 +245,10 @@
       "team": "DEN",
       "name": "Denver Broncos",
       "w": 2,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": 0.6667,
-      "pd": -10,
+      "pct": 0.5,
+      "pd": -20,
       "w2025": 14
     },
     {
@@ -257,10 +257,10 @@
       "team": "CIN",
       "name": "Cincinnati Bengals",
       "w": 2,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": 0.6667,
-      "pd": 17,
+      "pct": 0.5,
+      "pd": 12,
       "w2025": 6
     },
     {
@@ -268,11 +268,11 @@
       "owner": "LON",
       "team": "SF",
       "name": "San Francisco 49ers",
-      "w": 3,
+      "w": 4,
       "l": 0,
       "t": 0,
       "pct": 1.0,
-      "pd": 48,
+      "pd": 58,
       "w2025": 12
     },
     {
@@ -281,10 +281,10 @@
       "team": "LAC",
       "name": "Los Angeles Chargers",
       "w": 0,
-      "l": 3,
+      "l": 4,
       "t": 0,
       "pct": 0.0,
-      "pd": -32,
+      "pd": -39,
       "w2025": 11
     },
     {
@@ -293,10 +293,10 @@
       "team": "PHI",
       "name": "Philadelphia Eagles",
       "w": 2,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": 0.6667,
-      "pd": -14,
+      "pct": 0.5,
+      "pd": -18,
       "w2025": 11
     },
     {
@@ -305,10 +305,10 @@
       "team": "HOU",
       "name": "Houston Texans",
       "w": 0,
-      "l": 3,
+      "l": 4,
       "t": 0,
       "pct": 0.0,
-      "pd": -21,
+      "pd": -25,
       "w2025": 12
     },
     {
@@ -316,11 +316,11 @@
       "owner": "FUR",
       "team": "GB",
       "name": "Green Bay Packers",
-      "w": 1,
+      "w": 2,
       "l": 2,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -35,
+      "pct": 0.5,
+      "pd": -32,
       "w2025": 10
     },
     {
@@ -328,11 +328,11 @@
       "owner": "KEV",
       "team": "KC",
       "name": "Kansas City Chiefs",
-      "w": 3,
+      "w": 4,
       "l": 0,
       "t": 0,
       "pct": 1.0,
-      "pd": 38,
+      "pd": 41,
       "w2025": 6
     },
     {
@@ -340,11 +340,11 @@
       "owner": "ADAM B",
       "team": "NE",
       "name": "New England Patriots",
-      "w": 1,
+      "w": 2,
       "l": 2,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -15,
+      "pct": 0.5,
+      "pd": -12,
       "w2025": 14
     },
     {
@@ -352,11 +352,11 @@
       "owner": "PHIL",
       "team": "CHI",
       "name": "Chicago Bears",
-      "w": 2,
+      "w": 3,
       "l": 1,
       "t": 0,
-      "pct": 0.6667,
-      "pd": 36,
+      "pct": 0.75,
+      "pd": 47,
       "w2025": 11
     },
     {
@@ -364,11 +364,11 @@
       "owner": "MARZ",
       "team": "DAL",
       "name": "Dallas Cowboys",
-      "w": 1,
+      "w": 2,
       "l": 2,
       "t": 0,
-      "pct": 0.3333,
-      "pd": 6,
+      "pct": 0.5,
+      "pd": 10,
       "w2025": 8
     },
     {
@@ -376,11 +376,11 @@
       "owner": "LON",
       "team": "JAX",
       "name": "Jacksonville Jaguars",
-      "w": 2,
+      "w": 3,
       "l": 1,
       "t": 0,
-      "pct": 0.6667,
-      "pd": 46,
+      "pct": 0.75,
+      "pd": 51,
       "w2025": 13
     },
     {
@@ -388,11 +388,11 @@
       "owner": "JIMMY",
       "team": "IND",
       "name": "Indianapolis Colts",
-      "w": 1,
+      "w": 2,
       "l": 2,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -19,
+      "pct": 0.5,
+      "pd": -2,
       "w2025": 8
     },
     {
@@ -400,11 +400,11 @@
       "owner": "DOM",
       "team": "NYG",
       "name": "New York Giants",
-      "w": 2,
+      "w": 3,
       "l": 1,
       "t": 0,
-      "pct": 0.6667,
-      "pd": -9,
+      "pct": 0.75,
+      "pd": 3,
       "w2025": 4
     },
     {
@@ -412,11 +412,11 @@
       "owner": "MERG",
       "team": "MIN",
       "name": "Minnesota Vikings",
-      "w": 3,
+      "w": 4,
       "l": 0,
       "t": 0,
       "pct": 1.0,
-      "pd": 30,
+      "pd": 35,
       "w2025": 9
     },
     {
@@ -425,10 +425,10 @@
       "team": "TB",
       "name": "Tampa Bay Buccaneers",
       "w": 0,
-      "l": 3,
+      "l": 4,
       "t": 0,
       "pct": 0.0,
-      "pd": -17,
+      "pd": -20,
       "w2025": 8
     },
     {
@@ -436,11 +436,11 @@
       "owner": "DOM",
       "team": "ATL",
       "name": "Atlanta Falcons",
-      "w": 1,
+      "w": 2,
       "l": 2,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -17,
+      "pct": 0.5,
+      "pd": 4,
       "w2025": 8
     },
     {
@@ -461,10 +461,10 @@
       "team": "NO",
       "name": "New Orleans Saints",
       "w": 1,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -2,
+      "pct": 0.25,
+      "pd": -23,
       "w2025": 6
     },
     {
@@ -473,10 +473,10 @@
       "team": "WAS",
       "name": "Washington Commanders",
       "w": 1,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -17,
+      "pct": 0.25,
+      "pd": -34,
       "w2025": 5
     },
     {
@@ -484,11 +484,11 @@
       "owner": "MERG",
       "team": "CAR",
       "name": "Carolina Panthers",
-      "w": 1,
+      "w": 2,
       "l": 2,
       "t": 0,
-      "pct": 0.3333,
-      "pd": 6,
+      "pct": 0.5,
+      "pd": 12,
       "w2025": 8
     },
     {
@@ -497,10 +497,10 @@
       "team": "TEN",
       "name": "Tennessee Titans",
       "w": 0,
-      "l": 3,
+      "l": 4,
       "t": 0,
       "pct": 0.0,
-      "pd": -22,
+      "pd": -28,
       "w2025": 3
     },
     {
@@ -509,10 +509,10 @@
       "team": "NYJ",
       "name": "New York Jets",
       "w": 1,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": 0.3333,
-      "pd": 3,
+      "pct": 0.25,
+      "pd": -8,
       "w2025": 3
     },
     {
@@ -533,10 +533,10 @@
       "team": "MIA",
       "name": "Miami Dolphins",
       "w": 0,
-      "l": 3,
+      "l": 4,
       "t": 0,
       "pct": 0.0,
-      "pd": -50,
+      "pd": -55,
       "w2025": 7
     }
   ],
@@ -726,20 +726,20 @@
     {
       "team": "ARI",
       "name": "Arizona Cardinals",
-      "pct": 0.3333,
+      "pct": 0.25,
       "w2025": 3,
-      "pd": -18,
+      "pd": -30,
       "w": 1,
-      "l": 2
+      "l": 3
     },
     {
       "team": "LV",
       "name": "Las Vegas Raiders",
-      "pct": 1.0,
+      "pct": 0.75,
       "w2025": 3,
-      "pd": 34,
+      "pd": 31,
       "w": 3,
-      "l": 0
+      "l": 1
     }
   ],
   "draft_value": [
@@ -747,8 +747,8 @@
       "pick": 1,
       "team": "LAR",
       "owner": "MERG",
-      "actual_wins": 1,
-      "optimal_wins": 3,
+      "actual_wins": 2,
+      "optimal_wins": 4,
       "value": -2
     },
     {
@@ -756,15 +756,15 @@
       "team": "BUF",
       "owner": "MARZ",
       "actual_wins": 3,
-      "optimal_wins": 3,
-      "value": 0
+      "optimal_wins": 4,
+      "value": -1
     },
     {
       "pick": 3,
       "team": "BAL",
       "owner": "KEV",
-      "actual_wins": 2,
-      "optimal_wins": 3,
+      "actual_wins": 3,
+      "optimal_wins": 4,
       "value": -1
     },
     {
@@ -779,32 +779,32 @@
       "pick": 5,
       "team": "SEA",
       "owner": "PHIL",
-      "actual_wins": 2,
+      "actual_wins": 3,
       "optimal_wins": 3,
-      "value": -1
+      "value": 0
     },
     {
       "pick": 6,
       "team": "DEN",
       "owner": "DOM",
       "actual_wins": 2,
-      "optimal_wins": 2,
-      "value": 0
+      "optimal_wins": 3,
+      "value": -1
     },
     {
       "pick": 7,
       "team": "CIN",
       "owner": "ANT",
       "actual_wins": 2,
-      "optimal_wins": 2,
-      "value": 0
+      "optimal_wins": 3,
+      "value": -1
     },
     {
       "pick": 8,
       "team": "SF",
       "owner": "LON",
-      "actual_wins": 3,
-      "optimal_wins": 2,
+      "actual_wins": 4,
+      "optimal_wins": 3,
       "value": 1
     },
     {
@@ -812,16 +812,16 @@
       "team": "LAC",
       "owner": "ADAM B",
       "actual_wins": 0,
-      "optimal_wins": 2,
-      "value": -2
+      "optimal_wins": 3,
+      "value": -3
     },
     {
       "pick": 10,
       "team": "PHI",
       "owner": "FUR",
       "actual_wins": 2,
-      "optimal_wins": 2,
-      "value": 0
+      "optimal_wins": 3,
+      "value": -1
     },
     {
       "pick": 11,
@@ -835,72 +835,72 @@
       "pick": 12,
       "team": "GB",
       "owner": "FUR",
-      "actual_wins": 1,
-      "optimal_wins": 2,
-      "value": -1
-    },
-    {
-      "pick": 13,
-      "team": "KC",
-      "owner": "KEV",
-      "actual_wins": 3,
-      "optimal_wins": 2,
-      "value": 1
-    },
-    {
-      "pick": 14,
-      "team": "NE",
-      "owner": "ADAM B",
-      "actual_wins": 1,
-      "optimal_wins": 2,
-      "value": -1
-    },
-    {
-      "pick": 15,
-      "team": "CHI",
-      "owner": "PHIL",
       "actual_wins": 2,
       "optimal_wins": 2,
       "value": 0
     },
     {
+      "pick": 13,
+      "team": "KC",
+      "owner": "KEV",
+      "actual_wins": 4,
+      "optimal_wins": 2,
+      "value": 2
+    },
+    {
+      "pick": 14,
+      "team": "NE",
+      "owner": "ADAM B",
+      "actual_wins": 2,
+      "optimal_wins": 2,
+      "value": 0
+    },
+    {
+      "pick": 15,
+      "team": "CHI",
+      "owner": "PHIL",
+      "actual_wins": 3,
+      "optimal_wins": 2,
+      "value": 1
+    },
+    {
       "pick": 16,
       "team": "DAL",
       "owner": "MARZ",
-      "actual_wins": 1,
-      "optimal_wins": 1,
+      "actual_wins": 2,
+      "optimal_wins": 2,
       "value": 0
     },
     {
       "pick": 17,
       "team": "JAX",
       "owner": "LON",
-      "actual_wins": 2,
-      "optimal_wins": 1,
+      "actual_wins": 3,
+      "optimal_wins": 2,
       "value": 1
     },
     {
       "pick": 18,
       "team": "IND",
       "owner": "JIMMY",
-      "actual_wins": 1,
-      "optimal_wins": 1,
+      "actual_wins": 2,
+      "optimal_wins": 2,
       "value": 0
     },
     {
       "pick": 19,
       "team": "NYG",
       "owner": "DOM",
-      "actual_wins": 2,
-      "optimal_wins": 1,
+      "actual_wins": 3,
+      "optimal_wins": 2,
       "value": 1
     },
     {
       "pick": 20,
       "team": "MIN",
       "owner": "MERG",
-      "actual_wins": 3,
-      "optimal_wins": 1,
+      "actual_wins": 4,
+      "optimal_wins": 2,
       "value": 2
     },
     {
@@ -908,15 +908,15 @@
       "team": "TB",
       "owner": "LON",
       "actual_wins": 0,
-      "optimal_wins": 1,
-      "value": -1
+      "optimal_wins": 2,
+      "value": -2
     },
     {
       "pick": 22,
       "team": "ATL",
       "owner": "DOM",
-      "actual_wins": 1,
-      "optimal_wins": 1,
+      "actual_wins": 2,
+      "optimal_wins": 2,
       "value": 0
     },
     {
@@ -947,9 +947,9 @@
       "pick": 26,
       "team": "CAR",
       "owner": "MERG",
-      "actual_wins": 1,
+      "actual_wins": 2,
       "optimal_wins": 0,
-      "value": 1
+      "value": 2
     },
     {
       "pick": 27,
@@ -1017,13 +1017,13 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 0,
-        "l": 1,
+        "w": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.3,
-        "cum_pct": 0.3,
-        "cum_w": 3,
-        "cum_l": 7,
+        "pct": 0.3333,
+        "cum_pct": 0.3333,
+        "cum_w": 4,
+        "cum_l": 8,
         "cum_t": 0
       }
     },
@@ -1060,12 +1060,12 @@
       },
       "w4": {
         "w": 0,
-        "l": 0,
+        "l": 3,
         "t": 0,
-        "pct": 0.3333,
-        "cum_pct": 0.3333,
+        "pct": 0.25,
+        "cum_pct": 0.25,
         "cum_w": 3,
-        "cum_l": 6,
+        "cum_l": 9,
         "cum_t": 0
       }
     },
@@ -1101,13 +1101,13 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 0,
-        "l": 0,
+        "w": 2,
+        "l": 1,
         "t": 0,
-        "pct": 0.5556,
-        "cum_pct": 0.5556,
-        "cum_w": 5,
-        "cum_l": 4,
+        "pct": 0.5833,
+        "cum_pct": 0.5833,
+        "cum_w": 7,
+        "cum_l": 5,
         "cum_t": 0
       }
     },
@@ -1143,13 +1143,13 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 0,
-        "l": 0,
+        "w": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.4444,
-        "cum_pct": 0.4444,
-        "cum_w": 4,
-        "cum_l": 5,
+        "pct": 0.4167,
+        "cum_pct": 0.4167,
+        "cum_w": 5,
+        "cum_l": 7,
         "cum_t": 0
       }
     },
@@ -1185,13 +1185,13 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 0,
-        "l": 0,
+        "w": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.4444,
-        "cum_pct": 0.4444,
-        "cum_w": 4,
-        "cum_l": 5,
+        "pct": 0.4167,
+        "cum_pct": 0.4167,
+        "cum_w": 5,
+        "cum_l": 7,
         "cum_t": 0
       }
     },
@@ -1227,13 +1227,13 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 0,
-        "l": 0,
+        "w": 2,
+        "l": 1,
         "t": 0,
-        "pct": 0.5556,
-        "cum_pct": 0.5556,
-        "cum_w": 5,
-        "cum_l": 4,
+        "pct": 0.5833,
+        "cum_pct": 0.5833,
+        "cum_w": 7,
+        "cum_l": 5,
         "cum_t": 0
       }
     },
@@ -1269,13 +1269,13 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 0,
-        "l": 0,
+        "w": 2,
+        "l": 1,
         "t": 0,
-        "pct": 0.5556,
-        "cum_pct": 0.5556,
-        "cum_w": 5,
-        "cum_l": 4,
+        "pct": 0.5833,
+        "cum_pct": 0.5833,
+        "cum_w": 7,
+        "cum_l": 5,
         "cum_t": 0
       }
     },
@@ -1311,13 +1311,13 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 1,
-        "l": 0,
+        "w": 2,
+        "l": 1,
         "t": 0,
-        "pct": 0.7,
-        "cum_pct": 0.7,
-        "cum_w": 7,
-        "cum_l": 3,
+        "pct": 0.6667,
+        "cum_pct": 0.6667,
+        "cum_w": 8,
+        "cum_l": 4,
         "cum_t": 0
       }
     },
@@ -1353,12 +1353,12 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 0,
+        "w": 3,
         "l": 0,
         "t": 0,
-        "pct": 0.5556,
-        "cum_pct": 0.5556,
-        "cum_w": 5,
+        "pct": 0.6667,
+        "cum_pct": 0.6667,
+        "cum_w": 8,
         "cum_l": 4,
         "cum_t": 0
       }
@@ -1395,13 +1395,13 @@
         "cum_t": 0
       },
       "w4": {
-        "w": 0,
-        "l": 0,
+        "w": 2,
+        "l": 1,
         "t": 0,
-        "pct": 0.4444,
-        "cum_pct": 0.4444,
-        "cum_w": 4,
-        "cum_l": 5,
+        "pct": 0.5,
+        "cum_pct": 0.5,
+        "cum_w": 6,
+        "cum_l": 6,
         "cum_t": 0
       }
     }
@@ -1418,7 +1418,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "NE": {
@@ -1432,7 +1432,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "PIT": {
@@ -1460,7 +1460,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "HOU": {
@@ -1474,7 +1474,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "NYJ": {
@@ -1488,7 +1488,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "ATL": {
@@ -1502,7 +1502,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "DEN": {
@@ -1516,7 +1516,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "NYG": {
@@ -1530,7 +1530,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "GB": {
@@ -1544,7 +1544,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "NO": {
@@ -1558,7 +1558,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "PHI": {
@@ -1572,7 +1572,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "DET": {
@@ -1586,7 +1586,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "IND": {
@@ -1600,7 +1600,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "WAS": {
@@ -1614,7 +1614,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "BAL": {
@@ -1628,7 +1628,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "KC": {
@@ -1642,7 +1642,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "MIA": {
@@ -1656,7 +1656,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "JAX": {
@@ -1670,7 +1670,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "SF": {
@@ -1684,7 +1684,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "TB": {
@@ -1698,7 +1698,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "BUF": {
@@ -1712,7 +1712,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "CLE": {
@@ -1740,7 +1740,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "CAR": {
@@ -1754,7 +1754,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "LAR": {
@@ -1768,7 +1768,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "MIN": {
@@ -1782,7 +1782,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "CHI": {
@@ -1796,7 +1796,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "SEA": {
@@ -1810,7 +1810,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "TEN": {
@@ -1824,7 +1824,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "ARI": {
@@ -1838,7 +1838,7 @@
         "result": "L"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "LV": {
@@ -1852,7 +1852,7 @@
         "result": "W"
       },
       "w4": {
-        "result": "BYE"
+        "result": "L"
       }
     }
   }
