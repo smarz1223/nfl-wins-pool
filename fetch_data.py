@@ -137,7 +137,7 @@ def compute_draft_value(draft, team_meta, current_week_num):
     win-count terms (not a raw 17-game total dropped into a 3-game race)."""
     def eff_wins(tm):
         if tm["pct"] is not None:
-            return tm["w"]
+            return tm["w"] + 0.5 * tm["t"]   # a tie counts as half a win
         if current_week_num <= 0:
             return 0
         return round((tm["w2025"] / 17) * current_week_num)
@@ -148,11 +148,12 @@ def compute_draft_value(draft, team_meta, current_week_num):
         tm = team_meta[d["team"]]
         if tm["pct"] is None:
             continue
-        optimal = eff_wins(all_sorted[d["pick"] - 1]) if d["pick"] - 1 < len(all_sorted) else tm["w"]
+        actual = tm["w"] + 0.5 * tm["t"]
+        optimal = eff_wins(all_sorted[d["pick"] - 1]) if d["pick"] - 1 < len(all_sorted) else actual
         draft_value.append({
             "pick": d["pick"], "team": d["team"], "owner": d["owner"],
-            "actual_wins": tm["w"], "optimal_wins": optimal,
-            "value": tm["w"] - optimal,
+            "actual_wins": actual, "optimal_wins": optimal,
+            "value": actual - optimal,
         })
     return draft_value
 

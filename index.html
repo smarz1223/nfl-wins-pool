@@ -152,7 +152,7 @@ nav a{font-size:11px;padding:0 10px}
 <div id="pg-details" class="page">
 <div class="eyebrow">Performance Analysis</div>
 <div class="ptitle">Details</div>
-<div class="psub">Best performing teams and draft order performance, ranked by total wins</div>
+<div class="psub">Best performing teams and draft order performance, ranked by total wins (each tie counts as &frac12; win)</div>
 <div class="card mb2">
 <div class="ctitle">Best Performing Teams</div>
 <div style="overflow-x:auto"><table class="dt" id="bpt-tbl">
@@ -173,7 +173,7 @@ nav a{font-size:11px;padding:0 10px}
 <div id="pg-weekly" class="page">
 <div class="eyebrow">Week by Week</div>
 <div class="ptitle">Weekly Results</div>
-<div class="psub" id="wk-sub">Cumulative wins by owner, through the current week &mdash; more weeks populate as the season goes</div>
+<div class="psub" id="wk-sub">Cumulative wins by owner (each tie counts as &frac12; win), through the current week &mdash; more weeks populate as the season goes</div>
 <div class="card mb2">
 <div class="ctitle">Cumulative Wins Trend — click legend to highlight</div>
 <div class="leg" id="wk-leg"></div>
@@ -195,7 +195,7 @@ nav a{font-size:11px;padding:0 10px}
 <div class="psub">Per-team performance and draft value</div>
 <div class="card mb2">
 <div class="ctitle">Best &amp; Worst Draft Picks — click column to sort</div>
-<div style="font-size:11px;color:var(--gray);font-family:'Roboto Condensed',sans-serif;margin-bottom:8px">Actual wins vs optimal pick at same slot (bye-week teams compared on last year's pace)</div>
+<div style="font-size:11px;color:var(--gray);font-family:'Roboto Condensed',sans-serif;margin-bottom:8px">Actual wins (ties = &frac12;) vs optimal pick at same slot (bye-week teams compared on last year's pace)</div>
 <div style="overflow-x:auto"><table class="dt" id="dv-tbl">
 <thead><tr>
 <th data-col="pick" data-asc="1" onclick="sortTbl('dv-tbl',this)">Pick</th>
@@ -211,6 +211,7 @@ nav a{font-size:11px;padding:0 10px}
 </div>
 <div class="card">
 <div class="ctitle">All Teams — click column to sort</div>
+<div style="font-size:11px;color:var(--gray);font-family:'Roboto Condensed',sans-serif;margin-bottom:8px">W / L / T are actual results. The Wins column counts each tie as &frac12; win.</div>
 <div style="overflow-x:auto"><table class="dt" id="tm-tbl">
 <thead><tr>
 <th data-col="pick" onclick="sortTbl('tm-tbl',this)">Pick</th>
@@ -219,6 +220,7 @@ nav a{font-size:11px;padding:0 10px}
 <th data-col="w" onclick="sortTbl('tm-tbl',this)">W</th>
 <th data-col="l" onclick="sortTbl('tm-tbl',this)">L</th>
 <th data-col="t" onclick="sortTbl('tm-tbl',this)">T</th>
+<th data-col="ew" onclick="sortTbl('tm-tbl',this)">Wins</th>
 <th data-col="pd" onclick="sortTbl('tm-tbl',this)">Pt Diff</th>
 </tr></thead>
 <tbody id="tm-tbody"></tbody>
@@ -252,6 +254,7 @@ nav a{font-size:11px;padding:0 10px}
 <script>
 var OC={"MERG":"#388E3C","MARZ":"#1E88E5","KEV":"#A67C00","JIMMY":"#00838F","PHIL":"#B71C1C","DOM":"#212121","ANT":"#9C27B0","LON":"#E65100","ADAM B":"#283593","FUR":"#E91E8C"};
 function oc(o){return OC[o]||"#666";}
+function ew(r){return (r.w||0)+0.5*(r.t||0);}   // wins with each tie counted as a half win
 var PAYOUTS={1:600,2:300,3:100};
 function payoutCell(rank){
 var amt=PAYOUTS[rank];
@@ -420,8 +423,8 @@ return "<th style=\'text-align:center;min-width:52px\'><span class=\'odot\' styl
 function buildBestPerforming(){
 document.getElementById("bpt-thead").innerHTML=
 "<tr><th>Rank</th><th class=\'tal\'>Full Name</th>"+ownerHeaderCols()+"</tr>";
-var drafted=D.team_rows.slice().map(function(r){return{name:r.name,w:r.w,pd:r.pd,owner:r.owner,np:false};});
-var notPicked=(D.not_picked||[]).map(function(r){return{name:r.name,w:r.w,pd:r.pd,owner:null,np:true};});
+var drafted=D.team_rows.slice().map(function(r){return{name:r.name,w:ew(r),pd:r.pd,owner:r.owner,np:false};});
+var notPicked=(D.not_picked||[]).map(function(r){return{name:r.name,w:ew(r),pd:r.pd,owner:null,np:true};});
 var allRows=drafted.concat(notPicked).sort(function(a,b){return b.w-a.w||b.pd-a.pd;});
 var rows=allRows.map(function(r,i){
 var ownerCols,npCol;
@@ -453,7 +456,7 @@ dvSorted.forEach(function(d,i){vRankMap[d.pick]=i+1;});
 var rows=D.draft.map(function(pick){
 var tr=D.team_rows.find(function(r){return r.pick===pick.pick;});
 var dv=D.draft_value.find(function(r){return r.pick===pick.pick;});
-var aw=tr?tr.w:0;
+var aw=tr?ew(tr):0;
 var dvVal=dv?dv.value:0;
 var dvStr=(dvVal>=0?"+":"")+dvVal;
 var dvCls=dvVal>0?"val-pos":dvVal<0?"val-neg":"val-neu";
@@ -477,7 +480,7 @@ return "<tr class=\'np-row\' data-pick=\'99\'>"+
 "<td style=\'color:var(--gray2)\'>—</td>"+
 "<td class=\'tal\'><span class=\'chip\' style=\'background:#888\'>"+r.team+"</span></td>"+
 empCols+
-"<td style=\'text-align:center;font-style:italic;color:var(--gray)\' data-hv=\'"+r.w+"\'>"+r.w+"</td>"+
+"<td style=\'text-align:center;font-style:italic;color:var(--gray)\' data-hv=\'"+ew(r)+"\'>"+ew(r)+"</td>"+
 "<td style=\'color:var(--gray)\'>—</td>"+
 "<td style=\'color:var(--gray);font-style:italic\'>Not Picked</td>"+
 "<td style=\'color:var(--gray)\'>—</td>"+
@@ -501,7 +504,7 @@ return "<span class=\'leg-item\' id=\'leg-"+o.replace(/ /g,"-")+"\' onclick=\'to
 }).join("");
 var datasets=owners.map(function(o){
 var col=oc(o),dimmed=activeLeg&&activeLeg!==o;
-return{label:o,data:weeks.map(function(w){var d=D.owner_weekly[o]&&D.owner_weekly[o][w];return d?d.cum_w:null;}),
+return{label:o,data:weeks.map(function(w){var d=D.owner_weekly[o]&&D.owner_weekly[o][w];return d?(d.cum_w+0.5*(d.cum_t||0)):null;}),
 borderColor:dimmed?(col+"30"):col,backgroundColor:col+"18",pointBackgroundColor:dimmed?(col+"30"):col,
 tension:0.3,pointRadius:activeLeg===o?7:5,borderWidth:activeLeg===o?3:(activeLeg?1:2),
 spanGaps:false,order:activeLeg===o?0:1};
@@ -578,15 +581,16 @@ return "<tr data-pick=\'"+d.pick+"\' data-team=\'"+d.team+"\' data-owner=\'"+d.o
 function buildTmTable(){
 document.getElementById("tm-tbody").innerHTML=D.team_rows.map(function(r){
 return "<tr data-owner=\'"+r.owner+"\' data-pick=\'"+r.pick+"\' data-w=\'"+r.w+"\' data-l=\'"+r.l+"\' data-t=\'"+r.t+
-"\' data-pd=\'"+r.pd+"\' data-team=\'"+r.team+"\'>"+
+"\' data-ew=\'"+ew(r)+"\' data-pd=\'"+r.pd+"\' data-team=\'"+r.team+"\'>"+
 "<td>"+r.pick+"</td>"+
 "<td><span class=\'odot\' style=\'background:"+oc(r.owner)+"\'></span>"+r.owner+"</td>"+
 "<td><span class=\'chip\' style=\'background:"+oc(r.owner)+"\'>"+r.team+"</span></td>"+
-"<td class=\'wt\' data-hv=\'"+r.w+"\'>"+r.w+"</td><td class=\'lt\'>"+r.l+"</td><td class=\'tt\'>"+r.t+"</td>"+
+"<td class=\'wt\'>"+r.w+"</td><td class=\'lt\'>"+r.l+"</td><td class=\'tt\'>"+r.t+"</td>"+
+"<td data-hv=\'"+ew(r)+"\' style=\'font-weight:600\'>"+ew(r)+"</td>"+
 "<td class=\'"+(r.pd>=0?"wt":"lt")+"\'>"+fpd(r.pd)+"</td>"+
 "</tr>";
 }).join("");
-heatCol("tm-tbl",3,true);
+heatCol("tm-tbl",6,true);
 }
 
 function renderDraft(){
@@ -594,28 +598,29 @@ var tmap={};
 D.team_rows.forEach(function(r){tmap[r.pick]=r;});
 var draftedRows=D.draft.map(function(d){
 var live=tmap[d.pick]||{w:0};
+var lw=ew(live);
 var meta=D.team_rows.find(function(r){return r.pick===d.pick;})||{};
 var w25=meta.w2025||0;
 return "<tr data-pick=\'"+d.pick+"\' data-owner=\'"+d.owner+"\' data-team=\'"+d.team+
-"\' data-name=\'"+d.name+"\' data-w2025=\'"+w25+"\' data-w=\'"+live.w+"\'>"+
+"\' data-name=\'"+d.name+"\' data-w2025=\'"+w25+"\' data-w=\'"+lw+"\'>"+
 "<td>"+d.pick+"</td>"+
 "<td><span class=\'odot\' style=\'background:"+oc(d.owner)+"\'></span>"+d.owner+"</td>"+
 "<td><span class=\'chip\' style=\'background:"+oc(d.owner)+"\'>"+d.team+"</span></td>"+
 "<td class=\'tal hm\' style=\'font-weight:400;color:var(--gray)\'>"+d.name+"</td>"+
 "<td data-hv=\'"+w25+"\'>"+w25+"</td>"+
-"<td data-hv=\'"+live.w+"\'>"+live.w+"</td>"+
+"<td data-hv=\'"+lw+"\'>"+lw+"</td>"+
 "</tr>";
 }).join("");
 var npRows=(D.not_picked||[]).map(function(r){
 var w25=r.w2025||0;
 return "<tr class=\'np-row\' data-pick=\'99\' data-owner=\'Not Picked\' data-team=\'"+r.team+
-"\' data-name=\'"+r.name+"\' data-w2025=\'"+w25+"\' data-w=\'"+r.w+"\'>"+
+"\' data-name=\'"+r.name+"\' data-w2025=\'"+w25+"\' data-w=\'"+ew(r)+"\'>"+
 "<td style=\'color:var(--gray2)\'>—</td>"+
 "<td style=\'color:var(--gray)\'>Not Drafted</td>"+
 "<td><span class=\'chip\' style=\'background:#888\'>"+r.team+"</span></td>"+
 "<td class=\'tal hm\' style=\'font-weight:400;color:var(--gray)\'>"+r.name+"</td>"+
 "<td data-hv=\'"+w25+"\'>"+w25+"</td>"+
-"<td data-hv=\'"+r.w+"\'>"+r.w+"</td>"+
+"<td data-hv=\'"+ew(r)+"\'>"+ew(r)+"</td>"+
 "</tr>";
 }).join("");
 document.getElementById("dr-tbody").innerHTML=draftedRows+npRows;
