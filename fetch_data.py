@@ -82,12 +82,16 @@ def parse_csv(csv_text):
         if abbr is None:
             print("WARNING: unrecognized team name in sheet:", fullname)
             continue
-        pct = round(w / games, 4) if games > 0 else None
+        # Ties aren't a separate column in the sheet - infer from the gap
+        # between Games and (Wins + Losses). Assumes "Games" counts every
+        # game played, ties included.
+        t = max(games - w - l, 0)
+        pct = round((w + 0.5 * t) / games, 4) if games > 0 else None
 
         if owner == NOT_DRAFTED_LABEL:
             not_picked.append({
                 "team": abbr, "name": fullname, "pct": pct,
-                "w2025": w2025, "pd": pd, "w": w, "l": l, "games": games,
+                "w2025": w2025, "pd": pd, "w": w, "l": l, "t": t, "games": games,
             })
             continue
 
@@ -95,7 +99,7 @@ def parse_csv(csv_text):
         draft.append({"pick": pick, "owner": owner, "team": abbr, "name": fullname})
         team_meta[abbr] = {
             "pick": pick, "owner": owner, "team": abbr, "name": fullname,
-            "w": w, "l": l, "t": 0, "pct": pct, "pd": pd, "games": games, "w2025": w2025,
+            "w": w, "l": l, "t": t, "pct": pct, "pd": pd, "games": games, "w2025": w2025,
         }
         owner_teams.setdefault(owner, []).append(abbr)
 
@@ -110,7 +114,7 @@ def compute_standings(owner_teams, team_meta):
         teams = owner_teams[o]
         w = sum(team_meta[tm]["w"] for tm in teams)
         l = sum(team_meta[tm]["l"] for tm in teams)
-        t = 0
+        t = sum(team_meta[tm]["t"] for tm in teams)
         pd = sum(team_meta[tm]["pd"] for tm in teams)
         gp = w + l + t
         pct = round((w + 0.5 * t) / gp, 4) if gp > 0 else None
