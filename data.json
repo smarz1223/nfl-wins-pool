@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 20:12:17",
+  "updated": "2026-10-13 14:24:15",
   "current_week": 5,
   "total_weeks": 18,
   "week_order": [
@@ -30,21 +30,6 @@
   ],
   "standings": [
     {
-      "owner": "MERG",
-      "teams": [
-        "CAR",
-        "LAR",
-        "MIN"
-      ],
-      "w": 9,
-      "l": 4,
-      "t": 0,
-      "pd": 59,
-      "pct": 0.6923,
-      "rank": 1,
-      "gb": 0
-    },
-    {
       "owner": "LON",
       "teams": [
         "JAX",
@@ -56,8 +41,38 @@
       "t": 0,
       "pd": 102,
       "pct": 0.6667,
+      "rank": 1,
+      "gb": 0
+    },
+    {
+      "owner": "MERG",
+      "teams": [
+        "CAR",
+        "LAR",
+        "MIN"
+      ],
+      "w": 9,
+      "l": 5,
+      "t": 0,
+      "pd": 56,
+      "pct": 0.6429,
       "rank": 2,
-      "gb": 0.0
+      "gb": 0.5
+    },
+    {
+      "owner": "MARZ",
+      "teams": [
+        "BUF",
+        "CLE",
+        "DAL"
+      ],
+      "w": 9,
+      "l": 6,
+      "t": 0,
+      "pd": 6,
+      "pct": 0.6,
+      "rank": 3,
+      "gb": 1.0
     },
     {
       "owner": "KEV",
@@ -70,21 +85,6 @@
       "l": 6,
       "t": 0,
       "pd": 6,
-      "pct": 0.5714,
-      "rank": 3,
-      "gb": 1.5
-    },
-    {
-      "owner": "MARZ",
-      "teams": [
-        "BUF",
-        "CLE",
-        "DAL"
-      ],
-      "w": 8,
-      "l": 6,
-      "t": 0,
-      "pd": 3,
       "pct": 0.5714,
       "rank": 4,
       "gb": 1.5
@@ -187,10 +187,10 @@
       "team": "LAR",
       "name": "Los Angeles Rams",
       "w": 2,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": 0.5,
-      "pd": 2,
+      "pct": 0.4,
+      "pd": -1,
       "w2025": 12
     },
     {
@@ -198,11 +198,11 @@
       "owner": "MARZ",
       "team": "BUF",
       "name": "Buffalo Bills",
-      "w": 3,
+      "w": 4,
       "l": 1,
       "t": 0,
-      "pct": 0.75,
-      "pd": 20,
+      "pct": 0.8,
+      "pd": 23,
       "w2025": 12
     },
     {
@@ -759,9 +759,9 @@
       "pick": 2,
       "team": "BUF",
       "owner": "MARZ",
-      "actual_wins": 3.0,
+      "actual_wins": 4.0,
       "optimal_wins": 5.0,
-      "value": -2.0
+      "value": -1.0
     },
     {
       "pick": 3,
@@ -792,16 +792,16 @@
       "team": "DEN",
       "owner": "DOM",
       "actual_wins": 3.0,
-      "optimal_wins": 3.5,
-      "value": -0.5
+      "optimal_wins": 4.0,
+      "value": -1.0
     },
     {
       "pick": 7,
       "team": "CIN",
       "owner": "ANT",
       "actual_wins": 3.0,
-      "optimal_wins": 3.0,
-      "value": 0.0
+      "optimal_wins": 3.5,
+      "value": -0.5
     },
     {
       "pick": 8,
@@ -1395,12 +1395,12 @@
         "cum_t": 0
       },
       "w5": {
-        "w": 0,
+        "w": 1,
         "l": 2,
         "t": 0,
-        "pct": 0.5714,
-        "cum_pct": 0.5714,
-        "cum_w": 8,
+        "pct": 0.6,
+        "cum_pct": 0.6,
+        "cum_w": 9,
         "cum_l": 6,
         "cum_t": 0
       }
@@ -1448,12 +1448,12 @@
       },
       "w5": {
         "w": 1,
-        "l": 0,
+        "l": 1,
         "t": 0,
-        "pct": 0.6923,
-        "cum_pct": 0.6923,
+        "pct": 0.6429,
+        "cum_pct": 0.6429,
         "cum_w": 9,
-        "cum_l": 4,
+        "cum_l": 5,
         "cum_t": 0
       }
     },
@@ -1882,7 +1882,7 @@
         "result": "L"
       },
       "w5": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "CLE": {
@@ -1950,7 +1950,7 @@
         "result": "W"
       },
       "w5": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "MIN": {
