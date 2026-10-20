@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19 17:23:52",
+  "updated": "2026-10-20 15:36:15",
   "current_week": 6,
   "total_weeks": 18,
   "week_order": [
@@ -47,6 +47,21 @@
       "gb": 0
     },
     {
+      "owner": "LON",
+      "teams": [
+        "JAX",
+        "SF",
+        "TB"
+      ],
+      "w": 11,
+      "l": 7,
+      "t": 0,
+      "pd": 98,
+      "pct": 0.6111,
+      "rank": 2,
+      "gb": 0.0
+    },
+    {
       "owner": "MARZ",
       "teams": [
         "BUF",
@@ -58,23 +73,8 @@
       "t": 0,
       "pd": 2,
       "pct": 0.6111,
-      "rank": 2,
-      "gb": 0.0
-    },
-    {
-      "owner": "LON",
-      "teams": [
-        "JAX",
-        "SF",
-        "TB"
-      ],
-      "w": 10,
-      "l": 7,
-      "t": 0,
-      "pd": 92,
-      "pct": 0.5882,
       "rank": 3,
-      "gb": 0.5
+      "gb": 0.0
     },
     {
       "owner": "KEV",
@@ -174,12 +174,12 @@
         "WAS"
       ],
       "w": 6,
-      "l": 9,
+      "l": 10,
       "t": 1,
-      "pd": -38,
-      "pct": 0.4062,
+      "pd": -44,
+      "pct": 0.3824,
       "rank": 10,
-      "gb": 3.5
+      "gb": 4.0
     }
   ],
   "team_rows": [
@@ -272,11 +272,11 @@
       "owner": "LON",
       "team": "SF",
       "name": "San Francisco 49ers",
-      "w": 5,
+      "w": 6,
       "l": 0,
       "t": 0,
       "pct": 1.0,
-      "pd": 61,
+      "pd": 67,
       "w2025": 12
     },
     {
@@ -477,10 +477,10 @@
       "team": "WAS",
       "name": "Washington Commanders",
       "w": 1,
-      "l": 3,
+      "l": 4,
       "t": 1,
-      "pct": 0.3,
-      "pd": -34,
+      "pct": 0.25,
+      "pd": -40,
       "w2025": 5
     },
     {
@@ -754,8 +754,8 @@
       "team": "LAR",
       "owner": "MERG",
       "actual_wins": 2.0,
-      "optimal_wins": 5.0,
-      "value": -3.0
+      "optimal_wins": 6.0,
+      "value": -4.0
     },
     {
       "pick": 2,
@@ -809,9 +809,9 @@
       "pick": 8,
       "team": "SF",
       "owner": "LON",
-      "actual_wins": 5.0,
+      "actual_wins": 6.0,
       "optimal_wins": 4.0,
-      "value": 1.0
+      "value": 2.0
     },
     {
       "pick": 9,
@@ -1292,12 +1292,12 @@
       },
       "w6": {
         "w": 0,
-        "l": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.4062,
-        "cum_pct": 0.4062,
+        "pct": 0.3824,
+        "cum_pct": 0.3824,
         "cum_w": 6,
-        "cum_l": 9,
+        "cum_l": 10,
         "cum_t": 1
       }
     },
@@ -1415,12 +1415,12 @@
         "cum_t": 0
       },
       "w6": {
-        "w": 0,
+        "w": 1,
         "l": 2,
         "t": 0,
-        "pct": 0.5882,
-        "cum_pct": 0.5882,
-        "cum_w": 10,
+        "pct": 0.6111,
+        "cum_pct": 0.6111,
+        "cum_w": 11,
         "cum_l": 7,
         "cum_t": 0
       }
@@ -1910,7 +1910,7 @@
         "result": "T"
       },
       "w6": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "BAL": {
@@ -2010,7 +2010,7 @@
         "result": "W"
       },
       "w6": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "TB": {
