@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26 17:14:25",
+  "updated": "2026-10-27 13:28:48",
   "current_week": 7,
   "total_weeks": 18,
   "week_order": [
@@ -34,6 +34,21 @@
   ],
   "standings": [
     {
+      "owner": "MARZ",
+      "teams": [
+        "BUF",
+        "CLE",
+        "DAL"
+      ],
+      "w": 13,
+      "l": 7,
+      "t": 0,
+      "pd": 22,
+      "pct": 0.65,
+      "rank": 1,
+      "gb": 0
+    },
+    {
       "owner": "MERG",
       "teams": [
         "CAR",
@@ -45,23 +60,8 @@
       "t": 0,
       "pd": 55,
       "pct": 0.6316,
-      "rank": 1,
-      "gb": 0
-    },
-    {
-      "owner": "MARZ",
-      "teams": [
-        "BUF",
-        "CLE",
-        "DAL"
-      ],
-      "w": 12,
-      "l": 7,
-      "t": 0,
-      "pd": 5,
-      "pct": 0.6316,
       "rank": 2,
-      "gb": 0.0
+      "gb": 0.5
     },
     {
       "owner": "LON",
@@ -76,7 +76,7 @@
       "pd": 119,
       "pct": 0.6,
       "rank": 3,
-      "gb": 0.5
+      "gb": 1.0
     },
     {
       "owner": "DOM",
@@ -91,7 +91,7 @@
       "pd": 3,
       "pct": 0.5952,
       "rank": 4,
-      "gb": 0.5
+      "gb": 1.0
     },
     {
       "owner": "KEV",
@@ -106,7 +106,7 @@
       "pd": -17,
       "pct": 0.5263,
       "rank": 5,
-      "gb": 2.0
+      "gb": 2.5
     },
     {
       "owner": "PHIL",
@@ -121,7 +121,7 @@
       "pd": 32,
       "pct": 0.4762,
       "rank": 6,
-      "gb": 3.0
+      "gb": 3.5
     },
     {
       "owner": "ADAM B",
@@ -136,7 +136,7 @@
       "pd": -29,
       "pct": 0.45,
       "rank": 7,
-      "gb": 3.5
+      "gb": 4.0
     },
     {
       "owner": "ANT",
@@ -151,22 +151,7 @@
       "pd": 23,
       "pct": 0.4,
       "rank": 8,
-      "gb": 4.5
-    },
-    {
-      "owner": "FUR",
-      "teams": [
-        "GB",
-        "NO",
-        "PHI"
-      ],
-      "w": 8,
-      "l": 12,
-      "t": 0,
-      "pd": -64,
-      "pct": 0.4,
-      "rank": 9,
-      "gb": 4.5
+      "gb": 5.0
     },
     {
       "owner": "JIMMY",
@@ -180,8 +165,23 @@
       "t": 1,
       "pd": -47,
       "pct": 0.3947,
+      "rank": 9,
+      "gb": 5.0
+    },
+    {
+      "owner": "FUR",
+      "teams": [
+        "GB",
+        "NO",
+        "PHI"
+      ],
+      "w": 8,
+      "l": 13,
+      "t": 0,
+      "pd": -81,
+      "pct": 0.381,
       "rank": 10,
-      "gb": 4.5
+      "gb": 5.5
     }
   ],
   "team_rows": [
@@ -299,10 +299,10 @@
       "team": "PHI",
       "name": "Philadelphia Eagles",
       "w": 2,
-      "l": 4,
+      "l": 5,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -31,
+      "pct": 0.2857,
+      "pd": -48,
       "w2025": 11
     },
     {
@@ -370,11 +370,11 @@
       "owner": "MARZ",
       "team": "DAL",
       "name": "Dallas Cowboys",
-      "w": 2,
+      "w": 3,
       "l": 4,
       "t": 0,
-      "pct": 0.3333,
-      "pd": -8,
+      "pct": 0.4286,
+      "pd": 9,
       "w2025": 8
     },
     {
@@ -875,9 +875,9 @@
       "pick": 16,
       "team": "DAL",
       "owner": "MARZ",
-      "actual_wins": 2.0,
+      "actual_wins": 3.0,
       "optimal_wins": 4.0,
-      "value": -2.0
+      "value": -1.0
     },
     {
       "pick": 17,
@@ -908,8 +908,8 @@
       "team": "MIN",
       "owner": "MERG",
       "actual_wins": 6.0,
-      "optimal_wins": 2.0,
-      "value": 4.0
+      "optimal_wins": 3.0,
+      "value": 3.0
     },
     {
       "pick": 21,
@@ -1272,12 +1272,12 @@
       },
       "w7": {
         "w": 0,
-        "l": 2,
+        "l": 3,
         "t": 0,
-        "pct": 0.4,
-        "cum_pct": 0.4,
+        "pct": 0.381,
+        "cum_pct": 0.381,
         "cum_w": 8,
-        "cum_l": 12,
+        "cum_l": 13,
         "cum_t": 0
       }
     },
@@ -1559,12 +1559,12 @@
         "cum_t": 0
       },
       "w7": {
-        "w": 1,
+        "w": 2,
         "l": 0,
         "t": 0,
-        "pct": 0.6316,
-        "cum_pct": 0.6316,
-        "cum_w": 12,
+        "pct": 0.65,
+        "cum_pct": 0.65,
+        "cum_w": 13,
         "cum_l": 7,
         "cum_t": 0
       }
@@ -1988,7 +1988,7 @@
         "result": "L"
       },
       "w7": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "DET": {
@@ -2264,7 +2264,7 @@
         "result": "L"
       },
       "w7": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "CAR": {
