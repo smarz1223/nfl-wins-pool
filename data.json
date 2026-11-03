@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 20:42:10",
+  "updated": "2026-11-03 13:58:52",
   "current_week": 8,
   "total_weeks": 18,
   "week_order": [
@@ -117,11 +117,11 @@
         "SEA",
         "TEN"
       ],
-      "w": 10,
-      "l": 12,
+      "w": 11,
+      "l": 13,
       "t": 0,
       "pd": 25,
-      "pct": 0.4545,
+      "pct": 0.4583,
       "rank": 6,
       "gb": 4.0
     },
@@ -241,10 +241,10 @@
       "team": "SEA",
       "name": "Seattle Seahawks",
       "w": 4,
-      "l": 3,
+      "l": 4,
       "t": 0,
-      "pct": 0.5714,
-      "pd": 43,
+      "pct": 0.5,
+      "pd": 26,
       "w2025": 14
     },
     {
@@ -360,11 +360,11 @@
       "owner": "PHIL",
       "team": "CHI",
       "name": "Chicago Bears",
-      "w": 5,
+      "w": 6,
       "l": 2,
       "t": 0,
-      "pct": 0.7143,
-      "pd": 37,
+      "pct": 0.75,
+      "pd": 54,
       "w2025": 11
     },
     {
@@ -798,8 +798,8 @@
       "team": "DEN",
       "owner": "DOM",
       "actual_wins": 6.0,
-      "optimal_wins": 5.0,
-      "value": 1.0
+      "optimal_wins": 6.0,
+      "value": 0.0
     },
     {
       "pick": 7,
@@ -869,9 +869,9 @@
       "pick": 15,
       "team": "CHI",
       "owner": "PHIL",
-      "actual_wins": 5.0,
+      "actual_wins": 6.0,
       "optimal_wins": 4.0,
-      "value": 1.0
+      "value": 2.0
     },
     {
       "pick": 16,
@@ -1805,13 +1805,13 @@
         "cum_t": 0
       },
       "w8": {
-        "w": 0,
-        "l": 1,
+        "w": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.4545,
-        "cum_pct": 0.4545,
-        "cum_w": 10,
-        "cum_l": 12,
+        "pct": 0.4583,
+        "cum_pct": 0.4583,
+        "cum_w": 11,
+        "cum_l": 13,
         "cum_t": 0
       }
     }
@@ -2542,7 +2542,7 @@
         "result": "W"
       },
       "w8": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "SEA": {
@@ -2568,7 +2568,7 @@
         "result": "W"
       },
       "w8": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "TEN": {
