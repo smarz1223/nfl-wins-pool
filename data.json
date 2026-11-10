@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09 21:22:34",
+  "updated": "2026-11-10 14:44:09",
   "current_week": 9,
   "total_weeks": 18,
   "week_order": [
@@ -59,13 +59,13 @@
         "CLE",
         "DAL"
       ],
-      "w": 15,
+      "w": 16,
       "l": 10,
       "t": 0,
-      "pd": 27,
-      "pct": 0.6,
+      "pd": 44,
+      "pct": 0.6154,
       "rank": 2,
-      "gb": 1.0
+      "gb": 0.5
     },
     {
       "owner": "DOM",
@@ -90,12 +90,12 @@
         "MIN"
       ],
       "w": 14,
-      "l": 10,
+      "l": 11,
       "t": 0,
-      "pd": 60,
-      "pct": 0.5833,
+      "pd": 43,
+      "pct": 0.56,
       "rank": 4,
-      "gb": 1.5
+      "gb": 2.0
     },
     {
       "owner": "PHIL",
@@ -206,11 +206,11 @@
       "owner": "MARZ",
       "team": "BUF",
       "name": "Buffalo Bills",
-      "w": 6,
+      "w": 7,
       "l": 1,
       "t": 0,
-      "pct": 0.8571,
-      "pd": 52,
+      "pct": 0.875,
+      "pd": 69,
       "w2025": 12
     },
     {
@@ -423,10 +423,10 @@
       "team": "MIN",
       "name": "Minnesota Vikings",
       "w": 6,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": 0.8571,
-      "pd": 47,
+      "pct": 0.75,
+      "pd": 30,
       "w2025": 9
     },
     {
@@ -767,9 +767,9 @@
       "pick": 2,
       "team": "BUF",
       "owner": "MARZ",
-      "actual_wins": 6.0,
+      "actual_wins": 7.0,
       "optimal_wins": 7.0,
-      "value": -1.0
+      "value": 0.0
     },
     {
       "pick": 3,
@@ -784,8 +784,8 @@
       "team": "DET",
       "owner": "JIMMY",
       "actual_wins": 6.0,
-      "optimal_wins": 6.0,
-      "value": 0.0
+      "optimal_wins": 7.0,
+      "value": -1.0
     },
     {
       "pick": 5,
@@ -1723,12 +1723,12 @@
         "cum_t": 0
       },
       "w9": {
-        "w": 1,
+        "w": 2,
         "l": 1,
         "t": 0,
-        "pct": 0.6,
-        "cum_pct": 0.6,
-        "cum_w": 15,
+        "pct": 0.6154,
+        "cum_pct": 0.6154,
+        "cum_w": 16,
         "cum_l": 10,
         "cum_t": 0
       }
@@ -1816,12 +1816,12 @@
       },
       "w9": {
         "w": 1,
-        "l": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.5833,
-        "cum_pct": 0.5833,
+        "pct": 0.56,
+        "cum_pct": 0.56,
         "cum_w": 14,
-        "cum_l": 10,
+        "cum_l": 11,
         "cum_t": 0
       }
     },
@@ -2554,7 +2554,7 @@
         "result": "W"
       },
       "w9": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "CLE": {
@@ -2699,7 +2699,7 @@
         "result": "L"
       },
       "w9": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "CHI": {
