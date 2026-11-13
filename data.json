@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 18:46:29",
+  "updated": "2026-11-13 18:27:52",
   "current_week": 9,
   "total_weeks": 18,
   "week_order": [
@@ -75,12 +75,12 @@
         "NYG"
       ],
       "w": 15,
-      "l": 10,
+      "l": 11,
       "t": 1,
-      "pd": -13,
-      "pct": 0.5962,
+      "pd": -16,
+      "pct": 0.5741,
       "rank": 3,
-      "gb": 1.0
+      "gb": 1.5
     },
     {
       "owner": "MERG",
@@ -113,6 +113,21 @@
       "gb": 3.5
     },
     {
+      "owner": "JIMMY",
+      "teams": [
+        "DET",
+        "IND",
+        "WAS"
+      ],
+      "w": 11,
+      "l": 14,
+      "t": 1,
+      "pd": -59,
+      "pct": 0.4423,
+      "rank": 6,
+      "gb": 5.0
+    },
+    {
       "owner": "ANT",
       "teams": [
         "CIN",
@@ -124,7 +139,7 @@
       "t": 0,
       "pd": 41,
       "pct": 0.44,
-      "rank": 6,
+      "rank": 7,
       "gb": 5.0
     },
     {
@@ -139,7 +154,7 @@
       "t": 0,
       "pd": -58,
       "pct": 0.44,
-      "rank": 7,
+      "rank": 8,
       "gb": 5.0
     },
     {
@@ -154,7 +169,7 @@
       "t": 0,
       "pd": -62,
       "pct": 0.44,
-      "rank": 8,
+      "rank": 9,
       "gb": 5.0
     },
     {
@@ -169,21 +184,6 @@
       "t": 0,
       "pd": -79,
       "pct": 0.4231,
-      "rank": 9,
-      "gb": 5.5
-    },
-    {
-      "owner": "JIMMY",
-      "teams": [
-        "DET",
-        "IND",
-        "WAS"
-      ],
-      "w": 10,
-      "l": 14,
-      "t": 1,
-      "pd": -62,
-      "pct": 0.42,
       "rank": 10,
       "gb": 5.5
     }
@@ -411,10 +411,10 @@
       "team": "NYG",
       "name": "New York Giants",
       "w": 5,
-      "l": 2,
+      "l": 3,
       "t": 1,
-      "pct": 0.6875,
-      "pd": 10,
+      "pct": 0.6111,
+      "pd": 7,
       "w2025": 4
     },
     {
@@ -482,11 +482,11 @@
       "owner": "JIMMY",
       "team": "WAS",
       "name": "Washington Commanders",
-      "w": 2,
+      "w": 3,
       "l": 5,
       "t": 1,
-      "pct": 0.3125,
-      "pd": -30,
+      "pct": 0.3889,
+      "pd": -27,
       "w2025": 5
     },
     {
@@ -904,8 +904,8 @@
       "team": "NYG",
       "owner": "DOM",
       "actual_wins": 5.5,
-      "optimal_wins": 3.0,
-      "value": 2.5
+      "optimal_wins": 3.5,
+      "value": 2.0
     },
     {
       "pick": 20,
@@ -944,16 +944,16 @@
       "team": "NO",
       "owner": "FUR",
       "actual_wins": 3.0,
-      "optimal_wins": 2.5,
-      "value": 0.5
+      "optimal_wins": 3.0,
+      "value": 0.0
     },
     {
       "pick": 25,
       "team": "WAS",
       "owner": "JIMMY",
-      "actual_wins": 2.5,
+      "actual_wins": 3.5,
       "optimal_wins": 2.0,
-      "value": 0.5
+      "value": 1.5
     },
     {
       "pick": 26,
@@ -1263,14 +1263,14 @@
         "cum_t": 1
       },
       "w9": {
-        "w": 2,
+        "w": 1,
         "l": 1,
-        "t": 0,
-        "pct": 0.5962,
-        "cum_pct": 0.5962,
-        "cum_w": 15,
+        "t": 1,
+        "pct": 0.5769,
+        "cum_pct": 0.5769,
+        "cum_w": 14,
         "cum_l": 10,
-        "cum_t": 1
+        "cum_t": 2
       }
     },
     "FUR": {
@@ -1448,13 +1448,13 @@
       },
       "w9": {
         "w": 1,
-        "l": 2,
-        "t": 0,
-        "pct": 0.42,
-        "cum_pct": 0.42,
+        "l": 1,
+        "t": 1,
+        "pct": 0.44,
+        "cum_pct": 0.44,
         "cum_w": 10,
-        "cum_l": 14,
-        "cum_t": 1
+        "cum_l": 13,
+        "cum_t": 2
       }
     },
     "KEV": {
@@ -2177,7 +2177,7 @@
         "result": "BYE"
       },
       "w9": {
-        "result": "W"
+        "result": "T"
       }
     },
     "GB": {
@@ -2351,7 +2351,7 @@
         "result": "W"
       },
       "w9": {
-        "result": "L"
+        "result": "T"
       }
     },
     "BAL": {
