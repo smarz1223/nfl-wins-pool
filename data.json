@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 20:53:41",
+  "updated": "2026-11-17 14:45:15",
   "current_week": 10,
   "total_weeks": 18,
   "week_order": [
@@ -130,21 +130,6 @@
       "gb": 5.0
     },
     {
-      "owner": "KEV",
-      "teams": [
-        "BAL",
-        "KC",
-        "MIA"
-      ],
-      "w": 12,
-      "l": 15,
-      "t": 0,
-      "pd": -42,
-      "pct": 0.4444,
-      "rank": 7,
-      "gb": 6.0
-    },
-    {
       "owner": "ANT",
       "teams": [
         "CIN",
@@ -156,6 +141,21 @@
       "t": 0,
       "pd": 39,
       "pct": 0.4286,
+      "rank": 7,
+      "gb": 6.5
+    },
+    {
+      "owner": "KEV",
+      "teams": [
+        "BAL",
+        "KC",
+        "MIA"
+      ],
+      "w": 12,
+      "l": 16,
+      "t": 0,
+      "pd": -45,
+      "pct": 0.4286,
       "rank": 8,
       "gb": 6.5
     },
@@ -166,13 +166,13 @@
         "NE",
         "PIT"
       ],
-      "w": 11,
+      "w": 12,
       "l": 16,
       "t": 0,
-      "pd": -103,
-      "pct": 0.4074,
+      "pd": -100,
+      "pct": 0.4286,
       "rank": 9,
-      "gb": 7.0
+      "gb": 6.5
     },
     {
       "owner": "FUR",
@@ -221,10 +221,10 @@
       "team": "BAL",
       "name": "Baltimore Ravens",
       "w": 4,
-      "l": 5,
+      "l": 6,
       "t": 0,
-      "pct": 0.4444,
-      "pd": -47,
+      "pct": 0.4,
+      "pd": -50,
       "w2025": 8
     },
     {
@@ -292,11 +292,11 @@
       "owner": "ADAM B",
       "team": "LAC",
       "name": "Los Angeles Chargers",
-      "w": 0,
+      "w": 1,
       "l": 8,
       "t": 0,
-      "pct": 0.0,
-      "pd": -98,
+      "pct": 0.1111,
+      "pd": -95,
       "w2025": 11
     },
     {
@@ -825,9 +825,9 @@
       "pick": 9,
       "team": "LAC",
       "owner": "ADAM B",
-      "actual_wins": 0.0,
+      "actual_wins": 1.0,
       "optimal_wins": 7.0,
-      "value": -7.0
+      "value": -6.0
     },
     {
       "pick": 10,
@@ -994,8 +994,8 @@
       "team": "MIA",
       "owner": "KEV",
       "actual_wins": 1.0,
-      "optimal_wins": 0.0,
-      "value": 1.0
+      "optimal_wins": 1.0,
+      "value": 0.0
     }
   ],
   "owner_weekly": {
@@ -1091,12 +1091,12 @@
         "cum_t": 0
       },
       "w10": {
-        "w": 0,
+        "w": 1,
         "l": 2,
         "t": 0,
-        "pct": 0.4074,
-        "cum_pct": 0.4074,
-        "cum_w": 11,
+        "pct": 0.4286,
+        "cum_pct": 0.4286,
+        "cum_w": 12,
         "cum_l": 16,
         "cum_t": 0
       }
@@ -1602,12 +1602,12 @@
       },
       "w10": {
         "w": 1,
-        "l": 1,
+        "l": 2,
         "t": 0,
-        "pct": 0.4444,
-        "cum_pct": 0.4444,
+        "pct": 0.4286,
+        "cum_pct": 0.4286,
         "cum_w": 12,
-        "cum_l": 15,
+        "cum_l": 16,
         "cum_t": 0
       }
     },
@@ -2050,7 +2050,7 @@
         "result": "L"
       },
       "w10": {
-        "result": "BYE"
+        "result": "W"
       }
     },
     "NE": {
@@ -2530,7 +2530,7 @@
         "result": "L"
       },
       "w10": {
-        "result": "BYE"
+        "result": "L"
       }
     },
     "KC": {
